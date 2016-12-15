@@ -6,7 +6,7 @@ body {
 	}
 footer {
 	width: 100%; 
-	height: 100px; 
+	/*height: 100px;*/ 
 	background: #333; 
 	border-top: 2px solid #000; 
 	position: absolute; 
@@ -75,11 +75,6 @@ html, body, #map {
 	width: 37px; 
 	height: 35px;
 }
-.col-md-4{width:33.3333333333%}
-.row:before{display:table;content:" "}
-#todo {width:100%}
-#izquierda, #derecha { width:150px;}
-#contenido { width:800px;}
-#izquierda { float: left; } 
-#derecha { float: right; }
-#contenido { margin-left: 160px;}
+.sayuri{
+	float: right;
+}
