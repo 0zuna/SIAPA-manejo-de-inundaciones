@@ -150,7 +150,26 @@ L.marker([20.6496305555556, -103.298294444444],{icon: constrIcon}).bindPopup('Co
 		
 		obras.addTo(map);
 
-		L.circle([20.6737777, -103.4054536], 12000).addTo(map);
+
+//Figure
+	// L.circle([20.6737777, -103.4054536], 12000).addTo(map);
+
+	var cicle = L.circle([20.652590,-103.29829], {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5,
+		radius: 400
+	}).addTo(map);
+	// map.scrollWheelZoom.disable();
+	var polygon = L.polygon([
+		[20.638825, -103.348511111111],
+		[20.6390944444444, -103.347252777778],
+		[20.6374888888889, -103.345488888889],
+		[20.6333805555556, -103.34605],
+		[20.6340777777778, -103.347980555556]
+	]).addTo(map);
+//Figure end
+
 		L.control.layers(baseLayers, overlays, {collapsed: false}).addTo(map);
 		
 //box

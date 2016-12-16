@@ -1,28 +1,21 @@
 body {
-		padding: 0;
-		margin: 0;
-		color: rgb(0, 0, 0); 
-		background-color: rgb(233, 233, 233);		
-	}
-footer {
-	width: 100%; 
-	/*height: 100px;*/ 
-	background: #333; 
-	border-top: 2px solid #000; 
-	position: fixed; 
-	bottom: 0;
+	color: rgb(0, 0, 0); 
+	background-color: rgb(255, 255, 255);
+	/*background-color: rgb(233, 233, 233);*/
+	padding: 0;
+	margin: 0;			
 }
-.full{
-	width: 100%;
-	height: 600px;
-}
-html, body, #map {
+html, body {
 	//border: 1px #bbb solid;
 	//display: inline;
 	height: 100%;
 	width: 100%;			
 	//float: left;
 	//margin-top: 10px;
+}
+#map {
+	width: 100%;
+	height: 400px;
 }
 .info {
 	padding: 6px 8px;
@@ -81,4 +74,41 @@ html, body, #map {
 }
 .sayuri{
 	float: right;
+}
+.suzy {
+	margin: 0 auto;
+	padding: 0;
+}
+.center {
+	text-align: center !important;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.margin {
+	margin: 25px 25px auto;
+}
+.address {
+	font-style: normal;
+	font-size: 17px;
+}
+.top {
+	position: relative;
+	top: 40px;
+}
+.logo {
+	height: 63px;
+	line-height: 63;
+	width: 45px;
+}
+.inundaciones {
+	height: 106px;
+	width: 300px;
+}
+.jalisco {
+	height: 73px;
+	width: 218px;
 }

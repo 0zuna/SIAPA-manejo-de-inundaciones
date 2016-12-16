@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
 	<meta http-equiv=Content-Type content="text/html; charset=utf-8" http-equiv="content-type">
 	<title>SIAPA - Obras en proceso</title>
-    <link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
     <link rel="stylesheet" type="text/css" href="src/style.css">
     <link rel="stylesheet" type="text/css" href="lightbox/css/lightbox.css">
-	<link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css">
 	<link rel="stylesheet" type="text/css" href="http://k4r573n.github.io/leaflet-control-osm-geocoder/Control.OSMGeocoder.css">	
 
 </head>
 <body>
-	<img style="width: 45px; height: 63px;" alt="SIAPA" src="assets/logo_siapa.png">
-	<img style='width: 410px; height: 106px;' src="assets/manejo_3png.png" alt="assets/Imagen sobre inundaciones"> 
-	<img style="width: 218px; height: 73px;" alt="GOB JALISCO" src="assets/jalisco.png"><br>
+	<figure class="suzy center">
+		<img class="float-left margin logo" alt="SIAPA" src="assets/logo_siapa.png">
+		<img class="inundaciones" src="assets/manejo_4.png" alt="assets/Imagen sobre inundaciones"> 
+		<img class="float-right margin jalisco" alt="GOB JALISCO" src="assets/jalisco.png">
+	</figure>
+
 	<div id="map" class='full'></div>
+
 	<footer>
-			<span class='helvetica'>&nbsp;Av.Dr. R. Michel No. 461 esq. con González Gallo, Col. San Carlos, Sector
-				Reforma
-			</span>
-			<div class='sayuri'>
-				<img class='sakura' alt="LOGO PIE" src="assets/logo_siapa_footer.png">&nbsp; SIAPATEL 3668-2482 &nbsp;
+			<address class="address">
+				<span class='top helvetica margin'><small>&nbsp;Av.Dr. R. Michel No. 461 esq. con González Gallo, Col. San Carlos, Sector
+				Reforma</small></span>
+			</address>
+			
+			<div class='sayuri margin'>
+				<img class='sakura' alt="LOGO PIE" src="assets/logo_siapa_footer.png">
+				&nbsp;<span class="helvetica">SIAPATEL 3668-2482</span>&nbsp;
 				<img class='sakura' alt="facebook" src="assets/btn_facebook.png"> &nbsp;
 				<img class='sakura' alt="twitter" src="assets/btn_twitter.png"> &nbsp;
 				<img class='sakura' alt="youtube" src="assets/btn_youtube.png">	
@@ -33,7 +38,7 @@
 
 	<script src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
 	<script src='lightbox/js/lightbox.js'></script>
-	<script src='http://cdn.leafletjs.com/leaflet-0.7/leaflet.js'></script>
+	<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
 	<script src="http://k4r573n.github.io/leaflet-control-osm-geocoder/Control.OSMGeocoder.js"></script>
 	<script src='src/app/app.js'></script>
 </body>
