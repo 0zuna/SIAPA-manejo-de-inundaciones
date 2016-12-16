@@ -80,7 +80,7 @@ L.marker([20.7247222222222, -103.337102777778],{icon: constrIcon}).bindPopup('Co
 L.marker([20.7239222222222, -103.33935],{icon: constrIcon}).bindPopup('Limpieza y conformación del cauce.').addTo(obras).openPopup();
 L.marker([20.7224083333333, -103.341361111111],{icon: constrIcon}).bindPopup('Desmonte y limpieza de maleza de taludes y aplicacion de recurbimiento de concreto  de muros existentes de ambas margenes, reconstruccion de parte alta de muros con remate de rodapie y reposicion cercas.').addTo(obras).openPopup();
 L.marker([20.7115555555556, -103.406708333333],{icon: constrIcon}).bindPopup('Colector Pluvial Av. Acueducto de 150 cm de diámetro longitud aprox. 170 m, incluye tramo en cajón de concreto para cruce de carril central de Avenida Patria.').addTo(obras).openPopup();
-L.marker([20.6375916666667, -103.431738888889],{icon: constrIcon}).bindPopup('Construcción de colector pluvial, por la av. Felipe Zetter de 0.91 m a 1.22 m de diámetro, Longitud aproximada de 478 m..').addTo(obras).openPopup();
+L.marker([20.6375916666667, -103.431738888889],{icon: constrIcon}).bindPopup('Construcción de colector pluvial, por la av. Felipe Zetter de 0.91 m a 1.22 m de diámetro, Longitud aproximada de 478 m.').addTo(obras).openPopup();
 L.marker([20.6382944444444, -103.429197222222],{icon: constrIcon}).bindPopup('Construcción de colector pluvial de descarga, por la av. Felipe Zetter y calle Volan Vesubio de 1.22 m de diámetro con descarga a Canal Santa Catalina Longitud aproximada=686 m.').addTo(obras).openPopup();
 L.marker([20.6460472222222, -103.427713888889],{icon: constrIcon}).bindPopup('Construcción de tramo de colector pluvial  de diámetro de 2.13 m etapa 1, por Av. Colli, longitud aproximada de 580 m.').addTo(obras).openPopup();
 L.marker([20.6483833333333, -103.432644444444],{icon: constrIcon}).bindPopup('Construcción de tramo de colector pluvial  de diámetro de 2.13 m etapa 2, por la Av. Copérnico, longitud aproximada de 865 m.').addTo(obras).openPopup();
@@ -150,24 +150,157 @@ L.marker([20.6496305555556, -103.298294444444],{icon: constrIcon}).bindPopup('Co
 		
 		obras.addTo(map);
 
-
+map.on('click', function(e) {
+	console.log([(e.latlng.lat).toFixed(6),(e.latlng.lng).toFixed(6)]);
+});
+// map.scrollWheelZoom.disable();
 //Figure
-	// L.circle([20.6737777, -103.4054536], 12000).addTo(map);
+	
+	/**************************************************************
+	 * Polygons
+	***************************************************************/
+	
+	/**
+	 * 1.- Canal Pluvial tramo de Calzada Federalismo a Avenida Alcalde PROGRAMA DE OBRA: DE SEMANA 3 A SEMANA 30
+	 * 2.- CANAL PLUVIAL TRAMO DE AV. ALCALDE A PERIFERICO NORTE PROGRAMA DE OBRA: DE SEMANA 3 A SEMANA 31
+	**/
+	var obra1 = L.polygon([
+		[20.717825, -103.360577],
+		[20.717584, -103.356671],
+		[20.720334, -103.356199],
+		[20.719150, -103.350470],
+		[20.722481, -103.349977],
+		[20.725692, -103.349183],
+		[20.725451, -103.348324],
+		[20.724147, -103.345363],
+		[20.724027, -103.344365],
+		[20.724568, -103.343089],
+		[20.727117, -103.342209],
+		[20.725050, -103.335514],
+		[20.722501, -103.336372],
+		[20.722582, -103.339033],
+		[20.719370, -103.340406],
+		[20.714814, -103.341415],
+		[20.711643, -103.342080],
+		[20.710580, -103.342166],
+		[20.709335, -103.343067],
+		[20.710118, -103.349032],
+		[20.711563, -103.348839],
+		[20.711964, -103.352273],
+		[20.711362, -103.355598],
+		[20.711764, -103.359804],
+		[20.713269, -103.361328]
+	]).addTo(obras);
+		
+	/**
+	 * 3.- COLECTOR ACUEDUCTO PROGRAMA DE OBRA: DE SEMANA 2 A SEMANA 6
+	**/
+	var obra3 = L.polygon([
+		[20.707649, -103.409339],
+		[20.712848, -103.413051],
+		[20.714734, -103.408105],
+		[20.712908, -103.406024],
+		[20.711463, -103.405230],
+		[20.711141, -103.406067],
+		[20.709656, -103.406367],
+		[20.709154, -103.407247],
+		[20.708592, -103.407719],
+		[20.708643, -103.407977],
+		[20.708030, -103.408524]
+	]).addTo(obras);
+		
+	/**
+	 * 4.- PROGRAMA DE OBRA: DE SEMANA 9 A SEMANA 28 COLECTOR PLUVIAL FELIPE ZETTER
+	**/
+	var obra4 = L.polygon([
+		[20.641088, -103.431494],
+		[20.638477, -103.433211],
+		[20.634401, -103.434284],
+		[20.633859, -103.434080],
+		[20.633949, -103.432599],
+		[20.634130, -103.431505],
+		[20.639190, -103.423641],
+		[20.639833, -103.423898],
+	]).addTo(obras);
+	
+	/**
+	 * 5.- COLECTOR COPERNICO PROGRAMA DE OBRA: DE SEMANA 6 A SEMANA 32
+	**/
+	var obra5 = L.polygon([
+		[20.658406, -103.436129],
+		[20.658828, -103.433554],
+		[20.659189, -103.432868],
+		[20.661177, -103.430915],
+		[20.660454, -103.429735],
+		[20.657181, -103.429434],
+		[20.658305, -103.423212],
+		[20.650294, -103.426387],
+		[20.650053, -103.423340],
+		[20.645134, -103.425980],
+		[20.646881, -103.436687]
+	]).addTo(obras);
 
-	var cicle = L.circle([20.652590,-103.29829], {
-		color: 'red',
-		fillColor: '#f03',
-		fillOpacity: 0.5,
-		radius: 400
-	}).addTo(map);
-	// map.scrollWheelZoom.disable();
-	var polygon = L.polygon([
-		[20.638825, -103.348511111111],
-		[20.6390944444444, -103.347252777778],
-		[20.6374888888889, -103.345488888889],
-		[20.6333805555556, -103.34605],
-		[20.6340777777778, -103.347980555556]
-	]).addTo(map);
+	/**
+	 * 6.- AMPLIACIÓN DEL VASO REGULADOR EL DEÁN PROGRAMA DE OBRA: DE SEMANA 2 A SEMANA 32
+	**/
+	var obra6 = L.polygon([
+		[20.644070, -103.352316],
+		[20.654324, -103.339525],
+		[20.651954, -103.336950],
+		[20.643624, -103.331560],
+		[20.639421, -103.339726],
+		[20.639226, -103.341170],
+		[20.629064, -103.347358],
+		[20.628969, -103.348940],
+		[20.633763, -103.350898],
+	]).addTo(obras);
+
+	/**
+	 * 7.- PROGRAMA DE OBRA: DE SEMANA 2 A SEMANA 27 COLECTOR PLUVIAL AV. AVIACION
+	**/
+	var obra7 = L.polygon([
+		[20.768835, -103.450892],
+		[20.766688, -103.446686],
+		[20.765825, -103.445227],
+		[20.764641, -103.443682],
+		[20.764380, -103.443060],
+		[20.766728, -103.442545],
+		[20.764661, -103.439713],
+		[20.765464, -103.439584],
+		[20.765343, -103.439026],
+		[20.766026, -103.437030],
+		[20.766226, -103.434348],
+		[20.765002, -103.432288],
+		[20.763518, -103.432996],
+		[20.763738, -103.434069],
+		[20.762474, -103.434305],
+		[20.762896, -103.436408],
+		[20.757900, -103.441322],
+		[20.754990, -103.442159],
+		[20.755913, -103.446343],
+		[20.758642, -103.448510],
+		[20.761551, -103.448188],
+		[20.762434, -103.451986],
+		[20.766547, -103.451171]
+	]).addTo(obras);
+	
+	/**
+	 * 8.- DEPOSITO SAN ANDRES (PARQUE SAN RAFAEL) PROGRAMA DE OBRA: DE SEMANA 2 A SEMANA 28
+	**/
+	var obra8 = L.polygon([
+		[20.649167, -103.294055],
+		[20.650034, -103.296012],
+		[20.652774, -103.293630],
+		[20.667205, -103.291142],
+		[20.668112, -103.297292],
+		[20.664005, -103.298149],
+		[20.664185, -103.29938],
+		[20.648961, -103.301998],
+		[20.648783, -103.300515],
+		[20.6454003,-103.3009835],
+		[20.6454003,-103.2945835],
+	]).addTo(obras);
+	
 //Figure end
 
 		L.control.layers(baseLayers, overlays, {collapsed: false}).addTo(map);
