@@ -58,68 +58,6 @@ window.onload = function () {
  *	OBRAS
  *
  */
-L.marker([20.7153278,-103.35445],{icon: constrIcon}).bindPopup('Construcción de caja Federalismo y demolición de estructura vertedora.').addTo(obras).openPopup();
-L.marker([20.713233, -103.360981],{icon: constrIcon}).bindPopup('Obra de desvío, Av. Patria y Enrique Diaz de Leon').addTo(obras).openPopup();
-L.marker([20.7164777777778, -103.350613888889],{icon: constrIcon}).bindPopup('Construcción de Estructura de cruce del Colector Sanitario, caja de separación de flujos del Colector Existente de Margen Izquierda y cajas de deflexión de ambas márgenes.').addTo(obras).openPopup();
-L.marker([20.716925, -103.348644444444],{icon: constrIcon}).bindPopup('Construcción de colector sanitario margen izquierda hasta la Av. Alcalde..').addTo(obras).openPopup();
-L.marker([20.716575, -103.345688888889],{icon: constrIcon}).bindPopup('Construcción de cruce del Colector sanitario margen izquierda en la Av. Alcalde y tramo de descarga de Av. Alcalde a Av. Patria.').addTo(obras).openPopup();
-L.marker([20.7158861111111, -103.345797222222],{icon: constrIcon}).bindPopup('Construcción de cruce por método de hincado del Colector sanitario margen derecha de 18" de Diámetro, en la Av. Alcalde.').addTo(obras).openPopup();
-L.marker([20.7164222222222, -103.346805555556],{icon: constrIcon}).bindPopup('Colector Sanitario Margen Derecha de 18" de diametro con longitud de 375 m, hasta Av. Alcalde.').addTo(obras).openPopup();
-L.marker([20.7168944444444, -103.348158333333],{icon: constrIcon}).bindPopup('Construcción de muro de concreto armado en margen derecha .').addTo(obras).openPopup();
-L.marker([20.7168722222222, -103.346855555556],{icon: constrIcon}).bindPopup('Construcción de muro de concreto armado en margen izquierda.').addTo(obras).openPopup();
-L.marker([20.7168027777778, -103.348838888889],{icon: constrIcon}).bindPopup('Limpieza, desmonte y conformación del cauce.').addTo(obras).openPopup();
-L.marker([20.7172333333333, -103.347244444444],{icon: constrIcon}).bindPopup('Desmonte y limpieza de maleza de taludes y aplicacion de recurbimiento de concreto  de muros existentes de ambas margenes, reconstruccion de parte alta de muros con remate de rodapie y reposicion cercas.').addTo(obras).openPopup();
-L.marker([20.7155611111111, -103.344894444444],{icon: constrIcon}).bindPopup('Revision y rehabilitacion de linea pluvial de la Boca de tormenta ubicada en Jerez y Evora, a descargar al canal Atemajac bajo el Puente en Av. Patria.').addTo(obras).openPopup();
-L.marker([20.7175777777778, -103.344319444444],{icon: constrIcon}).bindPopup('Construcción de Colector Sanitario Margen Izquierda  en seccion de cajón.').addTo(obras).openPopup();
-L.marker([20.7177777777778, -103.344302777778],{icon: constrIcon}).bindPopup('Caja de Separación de Flujos del Colector El Batán.').addTo(obras).openPopup();
-L.marker([20.7159277777778, -103.344563888889],{icon: constrIcon}).bindPopup('Caja de Separación de Flujos del Colector Intermedio del Poniente..').addTo(obras).openPopup();
-L.marker([20.7169916666667, -103.344108333333],{icon: constrIcon}).bindPopup('Construcción de Colector Sanitario Margen Derecha del 0+000 al 1+021 en seccion cajon.').addTo(obras).openPopup();
-L.marker([20.7230305555556, -103.341027777778],{icon: constrIcon}).bindPopup('Estructura de cruce del Colector Sanitario Margen Izquierda a Margen Derecha,  con caja de separacion en colector Zapopan y tramo en seccion canal para unir descarga con caja.').addTo(obras).openPopup();
-L.marker([20.7252083333333, -103.337105555556],{icon: constrIcon}).bindPopup('Construccion de Desvio de Colector semicombinado en la Av. Alvaro Obregon para descarga a canal CFE por Periferico.').addTo(obras).openPopup();
-L.marker([20.7247222222222, -103.337102777778],{icon: constrIcon}).bindPopup('Construcción de Colector Sanitario General de Descarga en seccion de  cajon de 2.0mX2,0m.').addTo(obras).openPopup();
-L.marker([20.7239222222222, -103.33935],{icon: constrIcon}).bindPopup('Limpieza y conformación del cauce.').addTo(obras).openPopup();
-L.marker([20.7224083333333, -103.341361111111],{icon: constrIcon}).bindPopup('Desmonte y limpieza de maleza de taludes y aplicacion de recurbimiento de concreto  de muros existentes de ambas margenes, reconstruccion de parte alta de muros con remate de rodapie y reposicion cercas.').addTo(obras).openPopup();
-L.marker([20.7115555555556, -103.406708333333],{icon: constrIcon}).bindPopup('Colector Pluvial Av. Acueducto de 150 cm de diámetro longitud aprox. 170 m, incluye tramo en cajón de concreto para cruce de carril central de Avenida Patria.').addTo(obras).openPopup();
-L.marker([20.6375916666667, -103.431738888889],{icon: constrIcon}).bindPopup('Construcción de colector pluvial, por la av. Felipe Zetter de 0.91 m a 1.22 m de diámetro, Longitud aproximada de 478 m.').addTo(obras).openPopup();
-L.marker([20.6382944444444, -103.429197222222],{icon: constrIcon}).bindPopup('Construcción de colector pluvial de descarga, por la av. Felipe Zetter y calle Volan Vesubio de 1.22 m de diámetro con descarga a Canal Santa Catalina Longitud aproximada=686 m.').addTo(obras).openPopup();
-L.marker([20.6460472222222, -103.427713888889],{icon: constrIcon}).bindPopup('Construcción de tramo de colector pluvial  de diámetro de 2.13 m etapa 1, por Av. Colli, longitud aproximada de 580 m.').addTo(obras).openPopup();
-L.marker([20.6483833333333, -103.432644444444],{icon: constrIcon}).bindPopup('Construcción de tramo de colector pluvial  de diámetro de 2.13 m etapa 2, por la Av. Copérnico, longitud aproximada de 865 m.').addTo(obras).openPopup();
-L.marker([20.6515166666667, -103.432436111111],{icon: constrIcon}).bindPopup('Construcción de tramo de colector pluvial de diámetro de 1.83 m etapa 3, por la Av. Copérnico, longitud aproximada de 398 m.').addTo(obras).openPopup();
-L.marker([20.6567194444444, -103.432116666667],{icon: constrIcon}).bindPopup('Construcción de tramo de colector pluvial de  diámetro de 1.51 m y de 1.22 m etapa 4, por la Av. Copérnico, longitud aproximada de 716.28 m.').addTo(obras).openPopup();
-L.marker([20.638825, -103.348511111111],{icon: constrIcon}).bindPopup('Excavación y dragado para la ampliación de la capacidad del Vaso regulador el DEAN, incluyes caminos de acceso para equipo de dragado, achique. Etapa 1.').addTo(obras).openPopup();
-L.marker([20.6378527777778, -103.346988888889],{icon: constrIcon}).bindPopup('Excavación y dragado para la ampliación de la capacidad del Vaso regulador el DEAN, incluyes caminos de acceso para equipo de dragado, achique. Etapa 2.').addTo(obras).openPopup();
-L.marker([20.6374888888889, -103.345488888889],{icon: constrIcon}).bindPopup('Excavación y dragado para la ampliación de la capacidad del Vaso regulador el DEAN, incluyes caminos de acceso para equipo de dragado, achique. Etapa 3.').addTo(obras).openPopup();
-L.marker([20.6390944444444, -103.347252777778],{icon: constrIcon}).bindPopup('Construcción de Cárcamo de bombeo en el deposito el Dean, incluye: obra de cruce y linea y obra complementaria de descarga.').addTo(obras).openPopup();
-L.marker([20.6340777777778, -103.347980555556],{icon: constrIcon}).bindPopup('Construcción de Colectores pluviales de entrada al deposito el Dean; incluye depositos de primeras tormentas.').addTo(obras).openPopup();
-L.marker([20.6421055555556, -103.3463],{icon: constrIcon}).bindPopup('Obras complementarias en la  Salida del deposito el Dean.').addTo(obras).openPopup();
-L.marker([20.6333805555556, -103.34605],{icon: constrIcon}).bindPopup('Conformación y adecuaciones del canal de entrada al vaso regulador el Dean con longitud  aproximada de 680 m.').addTo(obras).openPopup();
-L.marker([20.6442555555556, -103.342455555556],{icon: constrIcon}).bindPopup('Construcción de 2 cajas separadoras de flujos para el colector Amapola; y cajas complementarias.').addTo(obras).openPopup();
-L.marker([20.7594138888889, -103.440855555556],{icon: constrIcon}).bindPopup(' Construcción de Colector pluvial en Av. Aviación de 150 cm. de diámetro con una longitud de 970 m, hincado con tuberia de concreto reforzado grado III pared B con refuerzo para hincado.').addTo(obras).openPopup();
-L.marker([20.7630027777778, -103.437486111111],{icon: constrIcon}).bindPopup('Cruce del colector Pluvial Av. Aviacion, mediante hincado de 3 tubos de 1.07 m de diámetro, en el cruce de la Av. Aviación y Carretera Tesistán.').addTo(obras).openPopup();
-L.marker([20.6549861111111, -103.299580555556],{icon: constrIcon}).bindPopup('Construcción de colectores pluviales de entrada al Deposito San Rafael, en una longitud aproximada de 1,054 m; en diámetros de 0.61 m a 1.83 m.').addTo(obras).openPopup();
-L.marker([20.6531555555556, -103.296580555556],{icon: constrIcon}).bindPopup('Deposito San Andrés (San Rafael) cap.= 21,350 m3, y construcción de  sistema de detención mediante canales perimetrales y tuberías de acero.').addTo(obras).openPopup();
-L.marker([20.6496305555556, -103.298294444444],{icon: constrIcon}).bindPopup('Construcción de colector pluvial de salida del Deposito San Rafael, en diámetro de 1.22 m en una longitud aproximada de 1132 m.').addTo(obras).openPopup();
-
-// map
-		var osmLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>',
-			thunLink = '<a href="http://thunderforest.com/">Thunderforest</a>',
-			gooLink = '<a href="https://developers.google.com/site-policies?hl=es">Google</a>';
-		
-		var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-			osmAttrib = '&copy; ' + osmLink + ' Contributors',
-
-			gooUrl = L.tileLayer('http://mt{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}&s=', { attribution: '&copy; <a href="https://www.google.com/intl/es-419_mx/help/terms_maps.html">Google 2014</a>', maxZoom: 19, subdomains: '0123' });
-			gooAttrib = '{ attribution:  &copy; }'+gooLink+' Contributors',
-			goiUrl = L.tileLayer('http://mt{s}.google.com/vt/lyrs=y&x={x}&y={y}&z={z}&s=', { attribution: '&copy;  <a href="https://www.google.com/intl/es-419_mx/help/terms_maps.html">Google 2014</a>', maxZoom: 19, subdomains: '0123' }),
-			goaUrl= L.tileLayer('http://mt{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}&s=', { attribution: '&copy;  <a href="https://www.google.com/intl/es-419_mx/help/terms_maps.html">Google 2014</a>', maxZoom: 19, subdomains: '0123' }),
-			terrurl = L.tileLayer('http://mt{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}&s=', { attribution: '&copy;  <a href="https://www.google.com/intl/es-419_mx/help/terms_maps.html">Google 2014</a>', maxZoom: 19, subdomains: '0123' }),
-
-
-
-
-			landUrl = 'http://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png',
-			thunAttrib = '&copy; '+osmLink+' Contributors & '+thunLink;
-
 	L.marker([20.7153278,-103.35445],{icon: constrIcon}).bindPopup('Construcción de caja Federalismo y demolición de estructura vertedora.').addTo(obras).openPopup();
 	L.marker([20.713233, -103.360981],{icon: constrIcon}).bindPopup('Obra de desvío, Av. Patria y Enrique Diaz de Leon').addTo(obras).openPopup();
 	L.marker([20.7164777777778, -103.350613888889],{icon: constrIcon}).bindPopup('Construcción de Estructura de cruce del Colector Sanitario, caja de separación de flujos del Colector Existente de Margen Izquierda y cajas de deflexión de ambas márgenes.').addTo(obras).openPopup();
@@ -162,6 +100,7 @@ L.marker([20.6496305555556, -103.298294444444],{icon: constrIcon}).bindPopup('Co
 	L.marker([20.6531555555556, -103.296580555556],{icon: constrIcon}).bindPopup('Deposito San Andrés (San Rafael) cap.= 21,350 m3, y construcción de  sistema de detención mediante canales perimetrales y tuberías de acero.').addTo(obras).openPopup();
 	L.marker([20.6496305555556, -103.298294444444],{icon: constrIcon}).bindPopup('Construcción de colector pluvial de salida del Deposito San Rafael, en diámetro de 1.22 m en una longitud aproximada de 1132 m.').addTo(obras).openPopup();
 
+
 /**
  *
  *	MAP
@@ -203,9 +142,6 @@ L.marker([20.6496305555556, -103.298294444444],{icon: constrIcon}).bindPopup('Co
 		
 		obras.addTo(map);
 
-map.on('click', function(e) {
-	console.log([(e.latlng.lat).toFixed(6),(e.latlng.lng).toFixed(6)]);
-});
 // map.scrollWheelZoom.disable();
 		//L.circle([20.6737777, -103.4054536], 12000).addTo(map);
 
@@ -358,8 +294,18 @@ map.on('click', function(e) {
 	
 //Figure end
 
-		L.control.layers(baseLayers, overlays, {collapsed: false}).addTo(map);
-	var latlngs = [
+/**
+ *
+ *	Rutas
+ *
+ */
+
+
+	/**
+ 	*	AREA1
+ 	*/
+
+	var area1_pink = [
 		[20.72486942227899, -103.33627581596375],
 		[20.724794162920702, -103.33681762218475],
 		[20.724277380983555, -103.33795487880707],
@@ -410,21 +356,18 @@ map.on('click', function(e) {
 		[20.71657561596804, -103.3509287238121],
 		[20.71643010654072, -103.35100919008255],
 			    ];
-	var polyline = L.polyline(latlngs, {color: '#FF00AA'}).addTo(obras);
-		 map.fitBounds(polyline.getBounds());
+	var polyline = L.polyline(area1_pink, {color: '#FF00AA'}).addTo(obras);
 
 	var panplona1 = [
 		[20.716798897403713, -103.34718704223633],
 		[20.715760259615866, -103.34734797477722]
 	];
 	var polyline = L.polyline(panplona1, {color: 'brown'}).addTo(obras);
-		 map.fitBounds(polyline.getBounds());
 	var panplona2 = [
 		[20.716465229518725, -103.34697246551514],
 		[20.715740189250315, -103.34708511829376]
 	];
 	var polyline = L.polyline(panplona2, {color: 'brown'}).addTo(obras);
-		 map.fitBounds(polyline.getBounds());
 	var delrio= [
 		[20.71594841916354, -103.34396839141846],
 		[20.715667434152927, -103.34423929452896],
@@ -441,7 +384,6 @@ map.on('click', function(e) {
 		[20.716675967215792, -103.34815263748169]
 	];
 	var polyline = L.polyline(delrio, {color: 'brown'}).addTo(obras);
-		 map.fitBounds(polyline.getBounds());
 
 	var orange = [
 		[20.71590576968655, -103.34596931934357],
@@ -456,21 +398,18 @@ map.on('click', function(e) {
 		[20.71590827847965, -103.3513981103897],
 	];
 	var polyline = L.polyline(orange, {color: '#FF4100'}).addTo(obras);
-		 map.fitBounds(polyline.getBounds());
 
 	var blue = [
 		[20.715531959050892, -103.35455238819122],
 		[20.715336272578536, -103.3534500002861]
 	];
 	var polyline = L.polyline(blue, {color: 'blue'}).addTo(obras);
-		 map.fitBounds(polyline.getBounds());
 	var black = [
 		[20.715521923853334, -103.35456311702727],
 		[20.71542909824437, -103.3540427684784]
 	];
 
 	var polyline = L.polyline(black, {color: 'black'}).addTo(obras);
-		 map.fitBounds(polyline.getBounds());
 	var midori = [
 		[20.724844335830383, -103.33627849817276],
 		[20.724769076459616, -103.33681493997572],
@@ -505,7 +444,6 @@ map.on('click', function(e) {
 	];
 
 	var polyline = L.polyline(midori, {color: 'green'}).addTo(obras);
-		 map.fitBounds(polyline.getBounds());
 
 	var red2 = [
 		[20.724824266668506, -103.33628922700882],
@@ -541,7 +479,11 @@ map.on('click', function(e) {
 	];
 
 	var polyline = L.polyline(red2, {color: '#FF00AA'}).addTo(obras);
-		 map.fitBounds(polyline.getBounds());
+	
+		 
+	/**
+ 	*	AREA2
+ 	*/
 	area2_pink = [
 		[20.711768713355315, -103.40595960617065],
 		[20.711578039752357, -103.40619027614592],
@@ -554,7 +496,6 @@ map.on('click', function(e) {
 	];
 	
 	var polyline = L.polyline(area2_pink, {color: '#FF00AA'}).addTo(obras);
-		 map.fitBounds(polyline.getBounds());
 	var area2_black = [
 		[20.710158015636306, -103.40701103210449],
 		[20.710263388907624, -103.40736508369446],
@@ -562,7 +503,6 @@ map.on('click', function(e) {
 		[20.712044687882045, -103.40974688529968]
 	];
 	var polyline = L.polyline(area2_black, {color: 'black'}).addTo(obras);
-		 map.fitBounds(polyline.getBounds());
 	var area2_black2 = [
 		[20.711552951102515, -103.40626001358032],
 		[20.711904191822146, -103.40700566768646],
@@ -573,7 +513,6 @@ map.on('click', function(e) {
 	];
 
 	var polyline = L.polyline(area2_black2, {color: 'black'}).addTo(obras);
-		 map.fitBounds(polyline.getBounds());
 	var area2_red = [
 		[20.709977375572144, -103.40739727020262],
 		[20.71256652924975, -103.40937137603758],
@@ -581,7 +520,12 @@ map.on('click', function(e) {
 		[20.712252922874054, -103.41063737869263]
 	];
 	var polyline = L.polyline(area2_red, {color: '#C80003'}).addTo(obras);
-		 map.fitBounds(polyline.getBounds());
+
+
+		 
+	/**
+ 	*	AREA3
+ 	*/
 
 	var area3_red = [
 		[20.63981255545414, -103.4240135550499],
@@ -599,19 +543,181 @@ map.on('click', function(e) {
 		[20.639144880430614, -103.43115091323853],
 		[20.638635336993648, -103.43135476112366],
 		[20.636037391951106, -103.4324598312378],
-		[20.63586670415364, -103.43453586101532],
+		[20.63592694692755, -103.43382239341737],
 	];
 	var polyline = L.polyline(area3_red, {color: '#C80003'}).addTo(obras);
-		 map.fitBounds(polyline.getBounds());
-	//coordenadas 
-	map.on('click', function(e) {
-		    console.log("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng)
-		    });	    
+
+
+	
+	/**
+ 	*	AREA4
+ 	*/
+	var area4_pink = [
+		[20.658697006281635, -103.43405842781068],
+		[20.658405876253745, -103.43404769897462],
+		[20.65856649978639, -103.4332323074341],
+		[20.65895801893589, -103.43242764472963],
+		[20.65951015961182, -103.43192338943481],
+		[20.657602756043925, -103.43208432197572],
+		[20.65532387934096, -103.43223452568054],
+		[20.646860615272185, -103.4327280521393],
+		[20.646609621600103, -103.43125820159914],
+		[20.64633854796891, -103.42952013015748],
+		[20.646137752374987, -103.42811465263368],
+		[20.645736160391706, -103.42580795288087],
+	];
+
+	var polyline = L.polyline(area4_pink, {color: '#FF00AA'}).addTo(obras);
+
+	
+	
+	
+	/**
+ 	*	AREA5
+ 	*/
+	var area5_black = [
+		[20.652924496458095, -103.34012746810913],
+		[20.651458746019852, -103.33858251571657],
+		[20.64688069474804, -103.33851814270021],
+		[20.64443097912148, -103.34216594696046],
+		[20.6465945619666, -103.34389328956605],
+		[20.644561497752605, -103.34739089012147],
+	];
+
+	var polyline = L.polyline(area5_black, {color: 'black'}).addTo(obras);
+	var area5_black2=[
+		[20.64443097912148, -103.34216594696046],
+		[20.644159901606628, -103.34241807460786],
+		[20.64402436266801, -103.3428579568863],
+		[20.644646836797005, -103.34326028823853],
+		[20.641915963623976, -103.34809362888338],
+	];
+	var polyline = L.polyline(area5_black2, {color: 'black'}).addTo(obras);
+	var area5_black3 = [
+		[20.651438667148597, -103.34235906600954],
+		[20.64642890589968, -103.33919405937196],
+	];
+	var polyline = L.polyline(area5_black3, {color: 'black'}).addTo(obras);
+
+	var area5_pink = [
+		[20.644443528994728, -103.34218204021455],
+		[20.644187511375616, -103.34243148565294],
+		[20.644069542327635, -103.34283381700517],
+		[20.64630842864672, -103.34431171417236],
+	];
+	
+	var polyline = L.polyline(area5_pink, {color: '#FF00AA'}).addTo(obras);
+	var area5_pink2 = [
+		[20.644069542327635, -103.34283381700517],
+		[20.641988754078092, -103.34653526544572],
+	];
+	var polyline = L.polyline(area5_pink2, {color: '#FF00AA'}).addTo(obras);
+	var area5_pink3 = [
+		[20.642611236538812, -103.3454141020775],
+		[20.64103745539588, -103.34440290927888],
+		[20.63968705285382, -103.34675788879395],
+		[20.63910471943351, -103.34733188152315],
+
+	];
+	var polyline = L.polyline(area5_pink3, {color: '#FF00AA'}).addTo(obras);
+	var area5_pink4 = [
+		[20.637151878156715, -103.35125863552095],
+		[20.63740790761829, -103.34911286830904],
+		[20.636710100817687, -103.34902167320253],
+		[20.636835605873994, -103.3480614423752],
+	];
+	var polyline = L.polyline(area5_pink4, {color: '#FF00AA'}).addTo(obras);
+	var area5_pink5 = [
+		[20.63727236266289, -103.35018038749696],
+		[20.636278362633274, -103.35000336170198],
+		[20.636132776225093, -103.35110306739809],
+	];
+	var polyline = L.polyline(area5_pink5, {color: '#FF00AA'}).addTo(obras);
+
+	var area5_pink6 = [
+		[20.636278362633274, -103.35000336170198],
+		[20.63555544944176, -103.34989070892334],
+		[20.63539982184705, -103.35100114345552],
+	];
+	var polyline = L.polyline(area5_pink6, {color: '#FF00AA'}).addTo(obras);
+	
+		 
+	var area5_pink7 = [
+		[20.63555544944176, -103.34989070892334],
+		[20.6351111573386, -103.34983974695207],
+		[20.63497310020617, -103.35095286369324],
+	];
+	var polyline = L.polyline(area5_pink7, {color: '#FF00AA'}).addTo(obras);
+	
+	var area5_pink8 = [
+		[20.63382847624721, -103.34967613220216],
+		[20.63426022138349, -103.34647893905641],
+		[20.634551397644135, -103.34587812423707],
+	];
+	var polyline = L.polyline(area5_pink8, {color: '#FF00AA'}).addTo(obras);
+
+	var area5_pink9 = [
+		[20.631614508103567, -103.34594249725343],
+		[20.632864575708517, -103.34515929222108],
+		[20.633497136125744, -103.34601759910583],
+		[20.63403932867612, -103.34553480148317],
+		[20.634466052935817, -103.34554016590118],
+		[20.63485261387914, -103.34572792053223],
+		[20.63680046446866, -103.34448337554933],
+		[20.637402887436913, -103.34469795227052],
+		[20.63781454175988, -103.34498763084412],
+		[20.639097189245362, -103.34733188152315],
+	];
+	var polyline = L.polyline(area5_pink9, {color: '#FF00AA'}).addTo(obras);
+
+	var area5_pink10 = [
+		[20.63680046446866, -103.34448337554933],
+		[20.636519332933787, -103.34594249725343],
+		[20.637322564512296, -103.34611415863039],
+	];
+	var polyline = L.polyline(area5_pink10, {color: '#FF00AA'}).addTo(obras);
+
+
+	/**
+ 	*	AREA6
+ 	*/
+	var area6_pink = [
+		[20.758822627301136, -103.44112873077394],
+		[20.759575049947934, -103.44054937362672],
+		[20.76314649835959, -103.43764185905458],
+		[20.76298598563554, -103.43716979026796],
+		[20.76362803550886, -103.43697667121889],
+		[20.76350765136539, -103.43638658523561],
+		[20.763472539305482, -103.43571603298189],
+	];
+	var polyline = L.polyline(area6_pink, {color: '#FF00AA'}).addTo(obras);
+	
+	/**
+ 	*	AREA7
+ 	*/
+	var area7_pink = [
+		[20.64800765108044, -103.29421609640123],
+		[20.649905135520502, -103.29935520887376],
+	];
+	var polyline = L.polyline(area7_pink, {color: '#FF00AA'}).addTo(obras);
+
+	var area7_pink2 = [
+		[20.64953618206739, -103.29836010932924],
+		[20.6510697174172, -103.29808384180072],
+		[20.651684633138725, -103.29802751541139],
+		[20.652221741162332, -103.29707264900209],
+		[20.65376779852438, -103.29662203788759],
+		[20.654934860630345, -103.29963952302934],
+		[20.662371220070987, -103.29848885536195],
+	];
+	var polyline = L.polyline(area7_pink2, {color: '#FF00AA'}).addTo(obras);
+
 /**
  *
  *	CONTROL
  *
  */		
+	L.control.layers(baseLayers, overlays, {collapsed: false}).addTo(map);
 	var info = L.control();
 	info.onAdd = function (map) {
 		this._div = L.DomUtil.create('div', 'info');
@@ -626,4 +732,9 @@ map.on('click', function(e) {
 		});
 	map.addControl(osmGeocoder);
 	info.addTo(map);
+
+	//coordenadas 
+	map.on('click', function(e) {
+		    console.log("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng)
+		    });
 };
