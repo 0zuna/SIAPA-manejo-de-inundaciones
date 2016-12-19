@@ -152,6 +152,10 @@ window.onload = function () {
 	***************************************************************/
 	
 	/**
+	 *	 Areas
+	**/
+	
+	/**
 	 * 1.- Canal Pluvial tramo de Calzada Federalismo a Avenida Alcalde PROGRAMA DE OBRA: DE SEMANA 3 A SEMANA 30
 	 * 2.- CANAL PLUVIAL TRAMO DE AV. ALCALDE A PERIFERICO NORTE PROGRAMA DE OBRA: DE SEMANA 3 A SEMANA 31
 	**/
@@ -266,7 +270,7 @@ window.onload = function () {
 		[20.763738, -103.434069],
 		[20.762474, -103.434305],
 		[20.762896, -103.436408],
-		[20.757900, -103.441322],
+		[20.757257576198867, -103.44147205352785],
 		[20.754990, -103.442159],
 		[20.755913, -103.446343],
 		[20.758642, -103.448510],
@@ -721,7 +725,6 @@ window.onload = function () {
 	var info = L.control();
 	info.onAdd = function (map) {
 		this._div = L.DomUtil.create('div', 'info');
-		this.update();
 		return this._div;
 		};
 
