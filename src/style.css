@@ -1,3 +1,8 @@
+@media only screen and (max-width : 663px) {
+	.re {
+		float: inherit !important;
+	}
+}
 body {
 	color: rgb(0, 0, 0); 
 	background-color: rgb(255, 255, 255);
@@ -15,7 +20,7 @@ html, body {
 }
 #map {
 	width: 100%;
-	height: 300px;
+	height: 63%;
 }
 .info {
 	padding: 6px 8px;
@@ -108,7 +113,6 @@ html, body {
 	font-size: 17px;
 }
 .top {
-	position: relative;
 	top: 40px;
 }
 .logo {
@@ -123,4 +127,10 @@ html, body {
 .jalisco {
 	height: 73px;
 	width: 218px;
+}
+.row {
+	display: inline-block;
+	height: 50px;
+	position: relative;
+	width: 100% !important;
 }
