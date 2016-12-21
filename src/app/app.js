@@ -142,7 +142,7 @@ window.onload = function () {
 		}
 
 		
-		rutasAlt.addTo(map);
+		obras.addTo(map);
 
 // map.scrollWheelZoom.disable();
 		//L.circle([20.6737777, -103.4054536], 12000).addTo(map);
@@ -717,6 +717,8 @@ window.onload = function () {
 		[20.662371220070987, -103.29848885536195],
 	];
 	var polyline = L.polyline(area7_pink2, {color: '#FF00AA'}).addTo(obras);
+
+
 /**
  *
  *	Rutas Alternas
@@ -839,8 +841,10 @@ window.onload = function () {
  	*	Circulo
  	*/
 	L.circle([20.714533453636225, -103.34941864013673], 1800).addTo(rutasAlt);
-	L.circle([20.639370785841784, -103.42374801635744], 600).addTo(rutasAlt);
+	L.circle([20.639370785841784, -103.42374801635744], 1800).addTo(rutasAlt);
 	L.circle([20.659490081804215, -103.2997226715088], 1800).addTo(rutasAlt);
+	L.circle([20.711603128398025, -103.4037494659424], 1800).addTo(rutasAlt);
+	L.circle([20.760207082076768, -103.43696594238283], 1800).addTo(rutasAlt);
 
 
 
