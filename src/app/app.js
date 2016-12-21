@@ -837,20 +837,8 @@ window.onload = function () {
 	];
 	var polyline = L.polyline(area3_alterna_rosa, {color: '#FF00AA'}).addTo(rutasAlt);
 
-	/**
- 	*	Circulo
- 	*/
-	L.circle([20.714533453636225, -103.34941864013673], 1800).addTo(rutasAlt);
-	L.circle([20.639370785841784, -103.42374801635744], 1800).addTo(rutasAlt);
-	L.circle([20.659490081804215, -103.2997226715088], 1800).addTo(rutasAlt);
-	L.circle([20.711603128398025, -103.4037494659424], 1800).addTo(rutasAlt);
-	L.circle([20.760207082076768, -103.43696594238283], 1800).addTo(rutasAlt);
-
-
-
-
 	/*
-	 * Av. Aviacion
+	 * AREA 4 -> Av. Aviacion
 	 *
 	*/
 
@@ -880,7 +868,7 @@ window.onload = function () {
 
 
 	/*
-	 * Acueducto -Av. Patria
+	 * AREA5 -> Acueducto -Av. Patria
 	 *
 	*/
 
@@ -930,6 +918,15 @@ window.onload = function () {
 	];
 	var polyline = L.polyline(acu_linea2_roja, {color: '#C80003'}).addTo(rutasAlt);
 	
+	/**
+ 	*	Circulo
+ 	*/
+	L.circle([20.714533453636225, -103.34941864013673], 1800).addTo(rutasAlt);
+	L.circle([20.639370785841784, -103.42374801635744], 1800).addTo(rutasAlt);
+	L.circle([20.659490081804215, -103.2997226715088], 1800).addTo(rutasAlt);
+	L.circle([20.711603128398025, -103.4037494659424], 1800).addTo(rutasAlt);
+	L.circle([20.760207082076768, -103.43696594238283], 1800).addTo(rutasAlt);
+
 
 /**
  *
