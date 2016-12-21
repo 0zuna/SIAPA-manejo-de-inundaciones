@@ -1,6 +1,7 @@
 window.onload = function () {
 	var coolPlaces = new L.LayerGroup();        
 	var obras = new L.LayerGroup({checked: "", id:'test1', position: 'bottomright',});
+	var rutasAlt = new L.LayerGroup({position: 'bottomright',});
 
 	var redIcon = L.icon({
 		iconUrl: 'assets/marker-icon-red.png',
@@ -135,8 +136,9 @@ window.onload = function () {
 		};
 
 	var overlays = {
-		"SIAPA": coolPlaces,                     
+		"Sucursales SIAPA": coolPlaces,                     
 		"Inundación":obras,
+		"Rutas Alternas":rutasAlt,
 		}
 
 		
