@@ -126,9 +126,11 @@ window.onload = function () {
 	var	landMap = L.tileLayer(landUrl, {attribution: thunAttrib});
 	var	gooMap = L.tileLayer(gooUrl, {attribution: gooAttrib});
 	
+
 	var map = L.map('map', {
-		layers: [gooUrl]
-		}).setView([20.677438582594192, -103.366756439209], 13);
+			    center: [20.677438582594192, -103.366756439209],
+			        zoom: 13
+				});
 
 	var baseLayers = {
 		"Google Map": gooUrl,
