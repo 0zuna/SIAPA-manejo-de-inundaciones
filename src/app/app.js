@@ -3,9 +3,6 @@ window.onload = function () {
 	var obras = new L.LayerGroup({checked: "", id:'test1', position: 'bottomright',});
 	var rutasAlt = new L.LayerGroup({position: 'bottomright',});
 
-
-
-
 	var redIcon = L.icon({
 		iconUrl: 'assets/marker-icon-red.png',
 		shadowUrl: 'assets/marker-shadow.png',
@@ -128,7 +125,7 @@ window.onload = function () {
 	
 	var map = L.map('map', {
 		layers: [gooUrl]
-		}).setView([20.677438582594192, -103.366756439209], 13);
+		}).setView([20.6737777,-103.4054536], 11);
 
 	var baseLayers = {
 		"Google Map": gooUrl,
@@ -140,12 +137,11 @@ window.onload = function () {
 
 	var overlays = {
 		"Sucursales SIAPA": coolPlaces,                     
-		"Manejo de Inundación":obras,
+		"Inundación":obras,
 		"Rutas Alternas":rutasAlt,
 		}
 
 		
-
 		obras.addTo(map);
 
 // map.scrollWheelZoom.disable();
@@ -846,14 +842,33 @@ window.onload = function () {
 	 *
 	*/
 
+	
 	var linea1_roja = [
-		[20.762881903074902, -103.43928068876268],
-		[20.763215468618345, -103.44010144472125],
+		[20.76502498616047, -103.44034016132356],
 		[20.764604899126617, -103.43975812196734],
-		[20.76502498616047, -103.44034016132356]
+		[20.763215468618345, -103.44010144472125],
+		[20.762881903074902, -103.43928068876268]
 	];
 	var polyline = L.polyline(linea1_roja, {color: '#C80003'}).addTo(rutasAlt);
 	
+	var arrowHead = L.polylineDecorator(polyline).addTo(rutasAlt);
+	var arrowOffset = 0;
+	var anim = window.setInterval(function() {
+		arrowHead.setPatterns([
+			{offset: arrowOffset+'%', repeat: 0, symbol: L.Symbol.arrowHead({pixelSize: 8, polygon: false, pathOptions: {stroke: true, color: '#C80003'}})}
+			// { offset: arrowOffset+'%', repeat: 0, symbol: L.Symbol.dash({pixelSize: 5, pathOptions: {color: '#000', weight: 1, opacity: 0.2}}) },
+			// { offset: arrowOffset+'%', repeat: 0, symbol: L.Symbol.marker({rotate: true, markerOptions: {
+			// 	icon: L.icon({
+			// 		iconUrl: 'assets/icon_car_siapa.png',
+			// 		iconAnchor: [16, 16]
+			// 	})
+			// }})}
+		])
+
+		if(++arrowOffset > 100)
+			arrowOffset = 0;
+	}, 100);
+
 	var linea2_roja = [
 		[20.761864899824946, -103.44046354293825],
 		[20.75989357440669, -103.44100534915925],
