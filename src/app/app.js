@@ -146,7 +146,7 @@ window.onload = function () {
 
 	var map = L.map('map', {
 		layers: [gooUrl]
-		}).setView([20.67502951111268, -103.3531951904297], 13);
+		}).setView([20.678241597926203, -103.3586883544922], 13);
 
 
 	var baseLayers = {
