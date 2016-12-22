@@ -1,4 +1,24 @@
 window.onload = function () {
+	function animatePolypoint (polyline, color) {
+		var arrowHead = L.polylineDecorator(polyline).addTo(rutasAlt);
+		var arrowOffset = 0;
+		var anim = window.setInterval(function() {
+			arrowHead.setPatterns([
+				{offset: arrowOffset+'%', repeat: 0, symbol: L.Symbol.arrowHead({pixelSize: 8, polygon: false, pathOptions: {stroke: true, color: color}})}
+				// { offset: arrowOffset+'%', repeat: 0, symbol: L.Symbol.dash({pixelSize: 5, pathOptions: {color: '#000', weight: 1, opacity: 0.2}}) },
+				// { offset: arrowOffset+'%', repeat: 0, symbol: L.Symbol.marker({rotate: true, markerOptions: {
+				// 	icon: L.icon({
+				// 		iconUrl: 'assets/icon_car_siapa.png',
+				// 		iconAnchor: [16, 16]
+				// 	})
+				// }})}
+			])
+
+			if(++arrowOffset > 100)
+				arrowOffset = 0;
+		}, 100);
+	};
+
 	var coolPlaces = new L.LayerGroup();        
 	var obras = new L.LayerGroup({checked: "", id:'test1', position: 'bottomright',});
 	var rutasAlt = new L.LayerGroup({position: 'bottomright',});
@@ -126,7 +146,7 @@ window.onload = function () {
 
 	var map = L.map('map', {
 		layers: [gooUrl]
-		}).setView([20.6737777,-103.4054536], 11);
+		}).setView([20.67502951111268, -103.3531951904297], 13);
 
 
 	var baseLayers = {
@@ -739,6 +759,9 @@ window.onload = function () {
 		[20.711951860142786, -103.34400326013566],
 	];
 	var polyline = L.polyline(area1_alterna_roja, {color: '#C80003'}).addTo(rutasAlt);
+
+	animatePolypoint(polyline, '#C80003');
+
 	var area1_alterna_roja2 = [
 		[20.702831884790257, -103.34727287292482],
 		[20.704377426794334, -103.34710121154785],
@@ -765,20 +788,26 @@ window.onload = function () {
 		[20.711969422151878, -103.35541605949403],
 	];
 	var polyline = L.polyline(area1_alterna_roja2, {color: '#C80003'}).addTo(rutasAlt);
+
+	animatePolypoint(polyline, '#C80003');
+
 	var area1_alterna_azul = [
-		[20.702370226330324, -103.34757328033449],
-		[20.704628324983723, -103.3473587036133],
-		[20.70536094532016, -103.34812045097351],
-		[20.70573227208377, -103.34875345230104],
-		[20.7062340635624, -103.34985852241516],
-		[20.706966676138112, -103.35517466068269],
-		[20.70881826337039, -103.35611879825593],
-		[20.709134385759143, -103.35623681545259],
-		[20.710137944528704, -103.356129527092],
-		[20.711026088496602, -103.35593104362489],
 		[20.71202963473899, -103.35555553436281],
+		[20.711026088496602, -103.35593104362489],
+		[20.710137944528704, -103.356129527092],
+		[20.709134385759143, -103.35623681545259],
+		[20.70881826337039, -103.35611879825593],
+		[20.706966676138112, -103.35517466068269],
+		[20.7062340635624, -103.34985852241516],
+		[20.70573227208377, -103.34875345230104],
+		[20.70536094532016, -103.34812045097351],
+		[20.704628324983723, -103.3473587036133],
+		[20.702370226330324, -103.34757328033449]
 	];
 	var polyline = L.polyline(area1_alterna_azul, {color: 'blue'}).addTo(rutasAlt);
+
+	animatePolypoint(polyline, '#0000FF');
+
 	var area1_alterna_azul2 = [
 		[20.71738845916345, -103.35402131080629],
 		[20.71925998895112, -103.353608250618],
@@ -791,6 +820,9 @@ window.onload = function () {
 		[20.72241594793369, -103.34529876708986],
 	];
 	var polyline = L.polyline(area1_alterna_azul2, {color: 'blue'}).addTo(rutasAlt);
+
+	animatePolypoint(polyline, '#0000FF');
+
 	var area1_alterna_roja3 = [
 		[20.72257148634216, -103.34555625915529],
 		[20.72139741827874, -103.3456313610077],
@@ -809,6 +841,9 @@ window.onload = function () {
 		[20.717112494370053, -103.35429489612581],
 	];
 	var polyline = L.polyline(area1_alterna_roja3, {color: '#C80003'}).addTo(rutasAlt);
+	
+	animatePolypoint(polyline, '#C80003');
+
 	/**
  	*	AREA2
  	*/
@@ -819,6 +854,8 @@ window.onload = function () {
 		[20.636750262446967, -103.42185437679292],
 	];
 	var polyline = L.polyline(area2_alterna_roja, {color: '#C80003'}).addTo(rutasAlt);
+
+	animatePolypoint(polyline, '#C80003');
 
 	/**
  	*	AREA3
@@ -834,11 +871,16 @@ window.onload = function () {
 		[20.662878174287826, -103.29832255840303],
 	];
 	var polyline = L.polyline(area3_alterna_roja, {color: '#C80003'}).addTo(rutasAlt);
+
+	animatePolypoint(polyline, '#C80003');
+
 	var area3_alterna_rosa = [
 		[20.6549223116231, -103.29964220523836],
 		[20.662373729749486, -103.29849153757097],
 	];
 	var polyline = L.polyline(area3_alterna_rosa, {color: '#FF00AA'}).addTo(rutasAlt);
+
+	animatePolypoint(polyline, '#FF00AA');
 
 	/*
 	 * AREA 4 -> Av. Aviacion
@@ -853,24 +895,8 @@ window.onload = function () {
 		[20.762881903074902, -103.43928068876268]
 	];
 	var polyline = L.polyline(linea1_roja, {color: '#C80003'}).addTo(rutasAlt);
-	
-	var arrowHead = L.polylineDecorator(polyline).addTo(rutasAlt);
-	var arrowOffset = 0;
-	var anim = window.setInterval(function() {
-		arrowHead.setPatterns([
-			{offset: arrowOffset+'%', repeat: 0, symbol: L.Symbol.arrowHead({pixelSize: 8, polygon: false, pathOptions: {stroke: true, color: '#C80003'}})}
-			// { offset: arrowOffset+'%', repeat: 0, symbol: L.Symbol.dash({pixelSize: 5, pathOptions: {color: '#000', weight: 1, opacity: 0.2}}) },
-			// { offset: arrowOffset+'%', repeat: 0, symbol: L.Symbol.marker({rotate: true, markerOptions: {
-			// 	icon: L.icon({
-			// 		iconUrl: 'assets/icon_car_siapa.png',
-			// 		iconAnchor: [16, 16]
-			// 	})
-			// }})}
-		])
 
-		if(++arrowOffset > 100)
-			arrowOffset = 0;
-	}, 100);
+	animatePolypoint(polyline, '#C80003');
 
 	var linea2_roja = [
 		[20.761864899824946, -103.44046354293825],
@@ -878,6 +904,8 @@ window.onload = function () {
 		[20.759718009827402, -103.4407424926758]
 	];
 	var polyline = L.polyline(linea2_roja, {color: '#C80003'}).addTo(rutasAlt);
+	
+	animatePolypoint(polyline, '#C80003');
 	
 	var linea3_roja = [
 		[20.75778678599692, -103.43013703823091],
@@ -888,6 +916,7 @@ window.onload = function () {
 	];
 	var polyline = L.polyline(linea3_roja, {color: '#C80003'}).addTo(rutasAlt);
 
+	animatePolypoint(polyline, '#C80003');
 
 	/*
 	 * AREA5 -> Acueducto -Av. Patria
@@ -920,6 +949,8 @@ window.onload = function () {
 	];
 	var polyline = L.polyline(acu_linea1_roja, {color: '#C80003'}).addTo(rutasAlt);
 	
+	animatePolypoint(polyline, '#C80003');
+	
 	var  acu_linea2_roja = [
 		[20.71144506986092, -103.40171098709108],
 		[20.711535389045167, -103.40215086936952],
@@ -939,6 +970,8 @@ window.onload = function () {
 		[20.712256686154404, -103.40888857841492]
 	];
 	var polyline = L.polyline(acu_linea2_roja, {color: '#C80003'}).addTo(rutasAlt);
+
+	animatePolypoint(polyline, '#C80003');
 	
 	/**
  	*	Circulo
