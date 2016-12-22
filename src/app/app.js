@@ -123,9 +123,11 @@ window.onload = function () {
 	var	landMap = L.tileLayer(landUrl, {attribution: thunAttrib});
 	var	gooMap = L.tileLayer(gooUrl, {attribution: gooAttrib});
 	
+
 	var map = L.map('map', {
 		layers: [gooUrl]
 		}).setView([20.6737777,-103.4054536], 11);
+
 
 	var baseLayers = {
 		"Google Map": gooUrl,
@@ -135,11 +137,20 @@ window.onload = function () {
 		"Landscape": landMap,                     
 		};
 
+
 	var overlays = {
+<<<<<<< HEAD
 		"Sucursales SIAPA": coolPlaces,                     
 		"Inundación":obras,
 		"Rutas Alternas":rutasAlt,
 		}
+=======
+		"Selecciona Detalle":{
+			"Sucursales SIAPA": coolPlaces,                     
+			"Manejo de Inundación":obras,
+			"Rutas Alternas":rutasAlt,}
+		};
+>>>>>>> c9e817cb580f701e19c2cb810168b4577125512f
 
 		
 		obras.addTo(map);
@@ -951,13 +962,16 @@ window.onload = function () {
  *
  *	CONTROL
  *
- */		
-	L.control.layers(baseLayers, overlays, {collapsed: false}).addTo(map);
+ */
+
+	L.control.groupedLayers(baseLayers, overlays).addTo(map);
 	var info = L.control();
 	info.onAdd = function (map) {
 		this._div = L.DomUtil.create('div', 'info');
 		return this._div;
 		};
+	
+
 
 	var osmGeocoder = new L.Control.OSMGeocoder({
 		collapsed: false,
