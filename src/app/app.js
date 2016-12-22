@@ -138,11 +138,13 @@ window.onload = function () {
 		"Landscape": landMap,                     
 		};
 
+
 	var overlays = {
-		"Sucursales SIAPA": coolPlaces,                     
-		"Manejo de Inundación":obras,
-		"Rutas Alternas":rutasAlt,
-		}
+		"Selecciona Detalle":{
+			"Sucursales SIAPA": coolPlaces,                     
+			"Manejo de Inundación":obras,
+			"Rutas Alternas":rutasAlt,}
+		};
 
 		
 
@@ -936,13 +938,16 @@ window.onload = function () {
  *
  *	CONTROL
  *
- */		
-	L.control.layers(baseLayers, overlays, {collapsed: false}).addTo(map);
+ */
+
+	L.control.groupedLayers(baseLayers, overlays).addTo(map);
 	var info = L.control();
 	info.onAdd = function (map) {
 		this._div = L.DomUtil.create('div', 'info');
 		return this._div;
 		};
+	
+
 
 	var osmGeocoder = new L.Control.OSMGeocoder({
 		collapsed: false,
