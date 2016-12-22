@@ -8,8 +8,8 @@ window.onload = function () {
 				// { offset: arrowOffset+'%', repeat: 0, symbol: L.Symbol.dash({pixelSize: 5, pathOptions: {color: '#000', weight: 1, opacity: 0.2}}) },
 				// { offset: arrowOffset+'%', repeat: 0, symbol: L.Symbol.marker({rotate: true, markerOptions: {
 				// 	icon: L.icon({
-				// 		iconUrl: 'assets/icon_car_siapa.png',
-				// 		iconAnchor: [16, 16]
+				// 		iconUrl: 'assets/icon_car_siapa_2.png',
+				// 		iconAnchor: [4, 4]
 				// 	})
 				// }})}
 			])
