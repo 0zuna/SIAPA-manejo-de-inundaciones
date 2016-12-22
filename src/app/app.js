@@ -128,9 +128,9 @@ window.onload = function () {
 	
 
 	var map = L.map('map', {
-			    center: [20.677438582594192, -103.366756439209],
-			        zoom: 13
-				});
+		layers: [gooUrl]
+		}).setView([20.677438582594192, -103.366756439209], 13);
+
 
 	var baseLayers = {
 		"Google Map": gooUrl,
