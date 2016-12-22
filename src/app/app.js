@@ -139,20 +139,12 @@ window.onload = function () {
 
 
 	var overlays = {
-<<<<<<< HEAD
-		"Sucursales SIAPA": coolPlaces,                     
-		"Inundación":obras,
-		"Rutas Alternas":rutasAlt,
-		}
-=======
 		"Selecciona Detalle":{
 			"Sucursales SIAPA": coolPlaces,                     
 			"Manejo de Inundación":obras,
 			"Rutas Alternas":rutasAlt,}
 		};
->>>>>>> c9e817cb580f701e19c2cb810168b4577125512f
 
-		
 		obras.addTo(map);
 
 // map.scrollWheelZoom.disable();
