@@ -3,6 +3,9 @@ window.onload = function () {
 	var obras = new L.LayerGroup({checked: "", id:'test1', position: 'bottomright',});
 	var rutasAlt = new L.LayerGroup({position: 'bottomright',});
 
+
+
+
 	var redIcon = L.icon({
 		iconUrl: 'assets/marker-icon-red.png',
 		shadowUrl: 'assets/marker-shadow.png',
@@ -125,7 +128,7 @@ window.onload = function () {
 	
 	var map = L.map('map', {
 		layers: [gooUrl]
-		}).setView([20.6737777,-103.4054536], 11);
+		}).setView([20.677438582594192, -103.366756439209], 13);
 
 	var baseLayers = {
 		"Google Map": gooUrl,
@@ -137,11 +140,12 @@ window.onload = function () {
 
 	var overlays = {
 		"Sucursales SIAPA": coolPlaces,                     
-		"Inundación":obras,
+		"Manejo de Inundación":obras,
 		"Rutas Alternas":rutasAlt,
 		}
 
 		
+
 		obras.addTo(map);
 
 // map.scrollWheelZoom.disable();
