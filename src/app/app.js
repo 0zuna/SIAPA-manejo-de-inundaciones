@@ -1,6 +1,6 @@
 window.onload = function () {
 	function animatePolypoint (polyline, color) {
-		var arrowHead = L.polylineDecorator(polyline).addTo(rutasAlt);
+		var arrowHead = L.polylineDecorator(polyline).addTo(obras);
 		var arrowOffset = 0;
 		var anim = window.setInterval(function() {
 			arrowHead.setPatterns([
@@ -60,66 +60,66 @@ window.onload = function () {
  *	SUCURSALES
  *
  */
-	L.marker([20.659023,-103.345132],{icon: aguaIcon}).bindPopup('CENTRO OPERATIVO GONZÁLEZ GALLO, Avenida Dr. R. Michel Número 461 esquina con González Gallo, Colonia Las Conchas, Sector Reforma, Guadalajara, Jalisco. Tel(s): 3837 4272. Atención de Lunes a Viernes de 8 a 16 hrs. y Sábados de 9 a 13 hrs.').addTo(coolPlaces).openPopup();
-	L.marker([20.718851,-103.386304],{icon: aguaIcon}).bindPopup('CENTRO OPERATIVO ÁVILA CAMACHO, Javier Mina Número 354 entre Avenida Américas y Avenida Avila Camacho. Zapopan, Jalisco. Tel(s): 3633 3183. Atención de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
-	L.marker([20.625894,-103.388911],{icon: aguaIcon}).bindPopup('CENTRO OPERATIVO EL SAUZ, Isla Banks Número 4090 entre Avenida Patria y Avenida Colon Colonia El Sáuz. Guadalajara, Jalisco. Tel(s): 3134 1700. Atención de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
-	L.marker([20.64612,-103.280463],{icon: aguaIcon}).bindPopup('CENTRO OPERATIVO RÍO NILO, Mercedes Celis Número 930 esquina con Río Nilo. Colonia Villas del Nilo. Tonalá, Jalisco. Tel(s): 3837 6283. Atención de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
-	L.marker([20.66196,-103.304092],{icon: aguaIcon}).bindPopup('SUC. SAN ANDRÉS, San Andrés y Chamizal. Unidad Administrativa San Andrés. Sector Libertad Tel(s): 3655 4817. Atención de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
-	L.marker([20.690427,-103.378765],{icon: aguaIcon}).bindPopup('SUC. JOSÉ MARÍA VIGIL, José María Vigil Número 2494, esquina Pisa. Colonia Italia Providencia. Zona Minerva. Guadalajara, Jalisco. Tel(s): 3837 4272 ext. 3703. Atención de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
-	L.marker([20.617502,-103.343958],{icon: aguaIcon}).bindPopup('SUC. MIRAVALLE, Avenida Gobernador Curiel Número 3577, Esquina Artes Plásticas. Colonia Miravalle. Guadalajara, Jalisco. Tel(s): 3670 8586. Atención de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
-	L.marker([20.631258,-103.416747],{icon: aguaIcon}).bindPopup('SUC. LAS ÁGUILAS, Unidad Administrativa Las Águilas. Avenida López Mateos Sur 5100. Colonia Las Águilas. Zapopan, Jalisco. Tel(s): 3837 4272 ext. 1702. Atención de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
-	L.marker([20.626662,-103.243064],{icon: aguaIcon}).bindPopup('SUC. TONALÁ, Constitución Número 109 entre Hidalgo y Morelos. Tonalá, Jalisco. Tel(s): 3683 1502. Atención de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
-	L.marker([20.689247,-103.29519],{icon: aguaIcon}).bindPopup('SUC. OBLATOS/ U. ADMVA. PRISCILIANO SÁNCHEZ, Unidad Administrativa Prisciliano Sánchez. Avenida Circunvalación Oblatos y Avenida Artesanos. Colonia Oblatos, Zona Oblatos. Guadalajara, Jalisco. Tel(s): 3643 9979 . Atención de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
-	L.marker([20.720625,-103.391299],{icon: aguaIcon}).bindPopup('SUC. BASÍLICA, Plaza Las Américas. Unidad Basílica. Entre Eva Briseño y Emiliano Zapata Zapopan, Jalisco. Tel(s): 3364 6507. Atención de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
-	L.marker([20.641685,-103.316449],{icon: aguaIcon}).bindPopup('SUC. PILA SECA, Pila Seca, Local 9. Niños Héroes Número 9. Tlaquepaque, Jalisco. Tel(s): 3838 5916. Atención de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
-	L.marker([20.686076,-103.262858],{icon: aguaIcon}).bindPopup('SUC. JALISCO, Delegación Municipal Colonia Jalisco. Atotonilco el Alto Número 3 esquina Tlaquepaque, Colonia Jalisco, Tonalá, Jalisco. Tel(s): 3285 2142 . Atención de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
+	L.marker([20.659023,-103.345132],{icon: aguaIcon}).bindPopup('CENTRO OPERATIVO GONZÃLEZ GALLO, Avenida Dr. R. Michel NÃºmero 461 esquina con GonzÃ¡lez Gallo, Colonia Las Conchas, Sector Reforma, Guadalajara, Jalisco. Tel(s): 3837 4272. AtenciÃ³n de Lunes a Viernes de 8 a 16 hrs. y SÃ¡bados de 9 a 13 hrs.').addTo(coolPlaces).openPopup();
+	L.marker([20.718851,-103.386304],{icon: aguaIcon}).bindPopup('CENTRO OPERATIVO ÃVILA CAMACHO, Javier Mina NÃºmero 354 entre Avenida AmÃ©ricas y Avenida Avila Camacho. Zapopan, Jalisco. Tel(s): 3633 3183. AtenciÃ³n de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
+	L.marker([20.625894,-103.388911],{icon: aguaIcon}).bindPopup('CENTRO OPERATIVO EL SAUZ, Isla Banks NÃºmero 4090 entre Avenida Patria y Avenida Colon Colonia El SÃ¡uz. Guadalajara, Jalisco. Tel(s): 3134 1700. AtenciÃ³n de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
+	L.marker([20.64612,-103.280463],{icon: aguaIcon}).bindPopup('CENTRO OPERATIVO RÃO NILO, Mercedes Celis NÃºmero 930 esquina con RÃ­o Nilo. Colonia Villas del Nilo. TonalÃ¡, Jalisco. Tel(s): 3837 6283. AtenciÃ³n de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
+	L.marker([20.66196,-103.304092],{icon: aguaIcon}).bindPopup('SUC. SAN ANDRÃ‰S, San AndrÃ©s y Chamizal. Unidad Administrativa San AndrÃ©s. Sector Libertad Tel(s): 3655 4817. AtenciÃ³n de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
+	L.marker([20.690427,-103.378765],{icon: aguaIcon}).bindPopup('SUC. JOSÃ‰ MARÃA VIGIL, JosÃ© MarÃ­a Vigil NÃºmero 2494, esquina Pisa. Colonia Italia Providencia. Zona Minerva. Guadalajara, Jalisco. Tel(s): 3837 4272 ext. 3703. AtenciÃ³n de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
+	L.marker([20.617502,-103.343958],{icon: aguaIcon}).bindPopup('SUC. MIRAVALLE, Avenida Gobernador Curiel NÃºmero 3577, Esquina Artes PlÃ¡sticas. Colonia Miravalle. Guadalajara, Jalisco. Tel(s): 3670 8586. AtenciÃ³n de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
+	L.marker([20.631258,-103.416747],{icon: aguaIcon}).bindPopup('SUC. LAS ÃGUILAS, Unidad Administrativa Las Ãguilas. Avenida LÃ³pez Mateos Sur 5100. Colonia Las Ãguilas. Zapopan, Jalisco. Tel(s): 3837 4272 ext. 1702. AtenciÃ³n de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
+	L.marker([20.626662,-103.243064],{icon: aguaIcon}).bindPopup('SUC. TONALÃ, ConstituciÃ³n NÃºmero 109 entre Hidalgo y Morelos. TonalÃ¡, Jalisco. Tel(s): 3683 1502. AtenciÃ³n de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
+	L.marker([20.689247,-103.29519],{icon: aguaIcon}).bindPopup('SUC. OBLATOS/ U. ADMVA. PRISCILIANO SÃNCHEZ, Unidad Administrativa Prisciliano SÃ¡nchez. Avenida CircunvalaciÃ³n Oblatos y Avenida Artesanos. Colonia Oblatos, Zona Oblatos. Guadalajara, Jalisco. Tel(s): 3643 9979 . AtenciÃ³n de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
+	L.marker([20.720625,-103.391299],{icon: aguaIcon}).bindPopup('SUC. BASÃLICA, Plaza Las AmÃ©ricas. Unidad BasÃ­lica. Entre Eva BriseÃ±o y Emiliano Zapata Zapopan, Jalisco. Tel(s): 3364 6507. AtenciÃ³n de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
+	L.marker([20.641685,-103.316449],{icon: aguaIcon}).bindPopup('SUC. PILA SECA, Pila Seca, Local 9. NiÃ±os HÃ©roes NÃºmero 9. Tlaquepaque, Jalisco. Tel(s): 3838 5916. AtenciÃ³n de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
+	L.marker([20.686076,-103.262858],{icon: aguaIcon}).bindPopup('SUC. JALISCO, DelegaciÃ³n Municipal Colonia Jalisco. Atotonilco el Alto NÃºmero 3 esquina Tlaquepaque, Colonia Jalisco, TonalÃ¡, Jalisco. Tel(s): 3285 2142 . AtenciÃ³n de Lunes a Viernes de 8 a 16 hrs.').addTo(coolPlaces).openPopup();
 
 /**
  *
  *	OBRAS
  *
  */
-	L.marker([20.7153278,-103.35445],{icon: constrIcon}).bindPopup('Construcción de caja Federalismo y demolición de estructura vertedora.').addTo(obras).openPopup();
-	L.marker([20.713233, -103.360981],{icon: constrIcon}).bindPopup('Obra de desvío, Av. Patria y Enrique Diaz de Leon').addTo(obras).openPopup();
-	L.marker([20.7164777777778, -103.350613888889],{icon: constrIcon}).bindPopup('Construcción de Estructura de cruce del Colector Sanitario, caja de separación de flujos del Colector Existente de Margen Izquierda y cajas de deflexión de ambas márgenes.').addTo(obras).openPopup();
-	L.marker([20.716925, -103.348644444444],{icon: constrIcon}).bindPopup('Construcción de colector sanitario margen izquierda hasta la Av. Alcalde..').addTo(obras).openPopup();
-	L.marker([20.716575, -103.345688888889],{icon: constrIcon}).bindPopup('Construcción de cruce del Colector sanitario margen izquierda en la Av. Alcalde y tramo de descarga de Av. Alcalde a Av. Patria.').addTo(obras).openPopup();
-	L.marker([20.7158861111111, -103.345797222222],{icon: constrIcon}).bindPopup('Construcción de cruce por método de hincado del Colector sanitario margen derecha de 18" de Diámetro, en la Av. Alcalde.').addTo(obras).openPopup();
+	L.marker([20.7153278,-103.35445],{icon: constrIcon}).bindPopup('ConstrucciÃ³n de caja Federalismo y demoliciÃ³n de estructura vertedora.').addTo(obras).openPopup();
+	L.marker([20.713233, -103.360981],{icon: constrIcon}).bindPopup('Obra de desvÃ­o, Av. Patria y Enrique Diaz de Leon').addTo(obras).openPopup();
+	L.marker([20.7164777777778, -103.350613888889],{icon: constrIcon}).bindPopup('ConstrucciÃ³n de Estructura de cruce del Colector Sanitario, caja de separaciÃ³n de flujos del Colector Existente de Margen Izquierda y cajas de deflexiÃ³n de ambas mÃ¡rgenes.').addTo(obras).openPopup();
+	L.marker([20.716925, -103.348644444444],{icon: constrIcon}).bindPopup('ConstrucciÃ³n de colector sanitario margen izquierda hasta la Av. Alcalde..').addTo(obras).openPopup();
+	L.marker([20.716575, -103.345688888889],{icon: constrIcon}).bindPopup('ConstrucciÃ³n de cruce del Colector sanitario margen izquierda en la Av. Alcalde y tramo de descarga de Av. Alcalde a Av. Patria.').addTo(obras).openPopup();
+	L.marker([20.7158861111111, -103.345797222222],{icon: constrIcon}).bindPopup('ConstrucciÃ³n de cruce por mÃ©todo de hincado del Colector sanitario margen derecha de 18" de DiÃ¡metro, en la Av. Alcalde.').addTo(obras).openPopup();
 	L.marker([20.7164222222222, -103.346805555556],{icon: constrIcon}).bindPopup('Colector Sanitario Margen Derecha de 18" de diametro con longitud de 375 m, hasta Av. Alcalde.').addTo(obras).openPopup();
-	L.marker([20.7168944444444, -103.348158333333],{icon: constrIcon}).bindPopup('Construcción de muro de concreto armado en margen derecha .').addTo(obras).openPopup();
-	L.marker([20.7168722222222, -103.346855555556],{icon: constrIcon}).bindPopup('Construcción de muro de concreto armado en margen izquierda.').addTo(obras).openPopup();
-	L.marker([20.7168027777778, -103.348838888889],{icon: constrIcon}).bindPopup('Limpieza, desmonte y conformación del cauce.').addTo(obras).openPopup();
+	L.marker([20.7168944444444, -103.348158333333],{icon: constrIcon}).bindPopup('ConstrucciÃ³n de muro de concreto armado en margen derecha .').addTo(obras).openPopup();
+	L.marker([20.7168722222222, -103.346855555556],{icon: constrIcon}).bindPopup('ConstrucciÃ³n de muro de concreto armado en margen izquierda.').addTo(obras).openPopup();
+	L.marker([20.7168027777778, -103.348838888889],{icon: constrIcon}).bindPopup('Limpieza, desmonte y conformaciÃ³n del cauce.').addTo(obras).openPopup();
 	L.marker([20.7172333333333, -103.347244444444],{icon: constrIcon}).bindPopup('Desmonte y limpieza de maleza de taludes y aplicacion de recurbimiento de concreto  de muros existentes de ambas margenes, reconstruccion de parte alta de muros con remate de rodapie y reposicion cercas.').addTo(obras).openPopup();
 	L.marker([20.7155611111111, -103.344894444444],{icon: constrIcon}).bindPopup('Revision y rehabilitacion de linea pluvial de la Boca de tormenta ubicada en Jerez y Evora, a descargar al canal Atemajac bajo el Puente en Av. Patria.').addTo(obras).openPopup();
-	L.marker([20.7175777777778, -103.344319444444],{icon: constrIcon}).bindPopup('Construcción de Colector Sanitario Margen Izquierda  en seccion de cajón.').addTo(obras).openPopup();
-	L.marker([20.7177777777778, -103.344302777778],{icon: constrIcon}).bindPopup('Caja de Separación de Flujos del Colector El Batán.').addTo(obras).openPopup();
-	L.marker([20.7159277777778, -103.344563888889],{icon: constrIcon}).bindPopup('Caja de Separación de Flujos del Colector Intermedio del Poniente..').addTo(obras).openPopup();
-	L.marker([20.7169916666667, -103.344108333333],{icon: constrIcon}).bindPopup('Construcción de Colector Sanitario Margen Derecha del 0+000 al 1+021 en seccion cajon.').addTo(obras).openPopup();
+	L.marker([20.7175777777778, -103.344319444444],{icon: constrIcon}).bindPopup('ConstrucciÃ³n de Colector Sanitario Margen Izquierda  en seccion de cajÃ³n.').addTo(obras).openPopup();
+	L.marker([20.7177777777778, -103.344302777778],{icon: constrIcon}).bindPopup('Caja de SeparaciÃ³n de Flujos del Colector El BatÃ¡n.').addTo(obras).openPopup();
+	L.marker([20.7159277777778, -103.344563888889],{icon: constrIcon}).bindPopup('Caja de SeparaciÃ³n de Flujos del Colector Intermedio del Poniente..').addTo(obras).openPopup();
+	L.marker([20.7169916666667, -103.344108333333],{icon: constrIcon}).bindPopup('ConstrucciÃ³n de Colector Sanitario Margen Derecha del 0+000 al 1+021 en seccion cajon.').addTo(obras).openPopup();
 	L.marker([20.7230305555556, -103.341027777778],{icon: constrIcon}).bindPopup('Estructura de cruce del Colector Sanitario Margen Izquierda a Margen Derecha,  con caja de separacion en colector Zapopan y tramo en seccion canal para unir descarga con caja.').addTo(obras).openPopup();
 	L.marker([20.7252083333333, -103.337105555556],{icon: constrIcon}).bindPopup('Construccion de Desvio de Colector semicombinado en la Av. Alvaro Obregon para descarga a canal CFE por Periferico.').addTo(obras).openPopup();
-	L.marker([20.7247222222222, -103.337102777778],{icon: constrIcon}).bindPopup('Construcción de Colector Sanitario General de Descarga en seccion de  cajon de 2.0mX2,0m.').addTo(obras).openPopup();
-	L.marker([20.7239222222222, -103.33935],{icon: constrIcon}).bindPopup('Limpieza y conformación del cauce.').addTo(obras).openPopup();
+	L.marker([20.7247222222222, -103.337102777778],{icon: constrIcon}).bindPopup('ConstrucciÃ³n de Colector Sanitario General de Descarga en seccion de  cajon de 2.0mX2,0m.').addTo(obras).openPopup();
+	L.marker([20.7239222222222, -103.33935],{icon: constrIcon}).bindPopup('Limpieza y conformaciÃ³n del cauce.').addTo(obras).openPopup();
 	L.marker([20.7224083333333, -103.341361111111],{icon: constrIcon}).bindPopup('Desmonte y limpieza de maleza de taludes y aplicacion de recurbimiento de concreto  de muros existentes de ambas margenes, reconstruccion de parte alta de muros con remate de rodapie y reposicion cercas.').addTo(obras).openPopup();
-	L.marker([20.7115555555556, -103.406708333333],{icon: constrIcon}).bindPopup('Colector Pluvial Av. Acueducto de 150 cm de diámetro longitud aprox. 170 m, incluye tramo en cajón de concreto para cruce de carril central de Avenida Patria.').addTo(obras).openPopup();
-	L.marker([20.6375916666667, -103.431738888889],{icon: constrIcon}).bindPopup('Construcción de colector pluvial, por la av. Felipe Zetter de 0.91 m a 1.22 m de diámetro, Longitud aproximada de 478 m..').addTo(obras).openPopup();
-	L.marker([20.6382944444444, -103.429197222222],{icon: constrIcon}).bindPopup('Construcción de colector pluvial de descarga, por la av. Felipe Zetter y calle Volan Vesubio de 1.22 m de diámetro con descarga a Canal Santa Catalina Longitud aproximada=686 m.').addTo(obras).openPopup();
-	L.marker([20.6460472222222, -103.427713888889],{icon: constrIcon}).bindPopup('Construcción de tramo de colector pluvial  de diámetro de 2.13 m etapa 1, por Av. Colli, longitud aproximada de 580 m.').addTo(obras).openPopup();
-	L.marker([20.6483833333333, -103.432644444444],{icon: constrIcon}).bindPopup('Construcción de tramo de colector pluvial  de diámetro de 2.13 m etapa 2, por la Av. Copérnico, longitud aproximada de 865 m.').addTo(obras).openPopup();
-	L.marker([20.6515166666667, -103.432436111111],{icon: constrIcon}).bindPopup('Construcción de tramo de colector pluvial de diámetro de 1.83 m etapa 3, por la Av. Copérnico, longitud aproximada de 398 m.').addTo(obras).openPopup();
-	L.marker([20.6567194444444, -103.432116666667],{icon: constrIcon}).bindPopup('Construcción de tramo de colector pluvial de  diámetro de 1.51 m y de 1.22 m etapa 4, por la Av. Copérnico, longitud aproximada de 716.28 m.').addTo(obras).openPopup();
-	L.marker([20.638825, -103.348511111111],{icon: constrIcon}).bindPopup('Excavación y dragado para la ampliación de la capacidad del Vaso regulador el DEAN, incluyes caminos de acceso para equipo de dragado, achique. Etapa 1.').addTo(obras).openPopup();
-	L.marker([20.6378527777778, -103.346988888889],{icon: constrIcon}).bindPopup('Excavación y dragado para la ampliación de la capacidad del Vaso regulador el DEAN, incluyes caminos de acceso para equipo de dragado, achique. Etapa 2.').addTo(obras).openPopup();
-	L.marker([20.6374888888889, -103.345488888889],{icon: constrIcon}).bindPopup('Excavación y dragado para la ampliación de la capacidad del Vaso regulador el DEAN, incluyes caminos de acceso para equipo de dragado, achique. Etapa 3.').addTo(obras).openPopup();
-	L.marker([20.6390944444444, -103.347252777778],{icon: constrIcon}).bindPopup('Construcción de Cárcamo de bombeo en el deposito el Dean, incluye: obra de cruce y linea y obra complementaria de descarga.').addTo(obras).openPopup();
-	L.marker([20.6340777777778, -103.347980555556],{icon: constrIcon}).bindPopup('Construcción de Colectores pluviales de entrada al deposito el Dean; incluye depositos de primeras tormentas.').addTo(obras).openPopup();
+	L.marker([20.7115555555556, -103.406708333333],{icon: constrIcon}).bindPopup('Colector Pluvial Av. Acueducto de 150 cm de diÃ¡metro longitud aprox. 170 m, incluye tramo en cajÃ³n de concreto para cruce de carril central de Avenida Patria.').addTo(obras).openPopup();
+	L.marker([20.6375916666667, -103.431738888889],{icon: constrIcon}).bindPopup('ConstrucciÃ³n de colector pluvial, por la av. Felipe Zetter de 0.91 m a 1.22 m de diÃ¡metro, Longitud aproximada de 478 m..').addTo(obras).openPopup();
+	L.marker([20.6382944444444, -103.429197222222],{icon: constrIcon}).bindPopup('ConstrucciÃ³n de colector pluvial de descarga, por la av. Felipe Zetter y calle Volan Vesubio de 1.22 m de diÃ¡metro con descarga a Canal Santa Catalina Longitud aproximada=686 m.').addTo(obras).openPopup();
+	L.marker([20.6460472222222, -103.427713888889],{icon: constrIcon}).bindPopup('ConstrucciÃ³n de tramo de colector pluvial  de diÃ¡metro de 2.13 m etapa 1, por Av. Colli, longitud aproximada de 580 m.').addTo(obras).openPopup();
+	L.marker([20.6483833333333, -103.432644444444],{icon: constrIcon}).bindPopup('ConstrucciÃ³n de tramo de colector pluvial  de diÃ¡metro de 2.13 m etapa 2, por la Av. CopÃ©rnico, longitud aproximada de 865 m.').addTo(obras).openPopup();
+	L.marker([20.6515166666667, -103.432436111111],{icon: constrIcon}).bindPopup('ConstrucciÃ³n de tramo de colector pluvial de diÃ¡metro de 1.83 m etapa 3, por la Av. CopÃ©rnico, longitud aproximada de 398 m.').addTo(obras).openPopup();
+	L.marker([20.6567194444444, -103.432116666667],{icon: constrIcon}).bindPopup('ConstrucciÃ³n de tramo de colector pluvial de  diÃ¡metro de 1.51 m y de 1.22 m etapa 4, por la Av. CopÃ©rnico, longitud aproximada de 716.28 m.').addTo(obras).openPopup();
+	L.marker([20.638825, -103.348511111111],{icon: constrIcon}).bindPopup('ExcavaciÃ³n y dragado para la ampliaciÃ³n de la capacidad del Vaso regulador el DEAN, incluyes caminos de acceso para equipo de dragado, achique. Etapa 1.').addTo(obras).openPopup();
+	L.marker([20.6378527777778, -103.346988888889],{icon: constrIcon}).bindPopup('ExcavaciÃ³n y dragado para la ampliaciÃ³n de la capacidad del Vaso regulador el DEAN, incluyes caminos de acceso para equipo de dragado, achique. Etapa 2.').addTo(obras).openPopup();
+	L.marker([20.6374888888889, -103.345488888889],{icon: constrIcon}).bindPopup('ExcavaciÃ³n y dragado para la ampliaciÃ³n de la capacidad del Vaso regulador el DEAN, incluyes caminos de acceso para equipo de dragado, achique. Etapa 3.').addTo(obras).openPopup();
+	L.marker([20.6390944444444, -103.347252777778],{icon: constrIcon}).bindPopup('ConstrucciÃ³n de CÃ¡rcamo de bombeo en el deposito el Dean, incluye: obra de cruce y linea y obra complementaria de descarga.').addTo(obras).openPopup();
+	L.marker([20.6340777777778, -103.347980555556],{icon: constrIcon}).bindPopup('ConstrucciÃ³n de Colectores pluviales de entrada al deposito el Dean; incluye depositos de primeras tormentas.').addTo(obras).openPopup();
 	L.marker([20.6421055555556, -103.3463],{icon: constrIcon}).bindPopup('Obras complementarias en la  Salida del deposito el Dean.').addTo(obras).openPopup();
-	L.marker([20.6333805555556, -103.34605],{icon: constrIcon}).bindPopup('Conformación y adecuaciones del canal de entrada al vaso regulador el Dean con longitud  aproximada de 680 m.').addTo(obras).openPopup();
-	L.marker([20.6442555555556, -103.342455555556],{icon: constrIcon}).bindPopup('Construcción de 2 cajas separadoras de flujos para el colector Amapola; y cajas complementarias.').addTo(obras).openPopup();
-	L.marker([20.7594138888889, -103.440855555556],{icon: constrIcon}).bindPopup(' Construcción de Colector pluvial en Av. Aviación de 150 cm. de diámetro con una longitud de 970 m, hincado con tuberia de concreto reforzado grado III pared B con refuerzo para hincado.').addTo(obras).openPopup();
-	L.marker([20.7630027777778, -103.437486111111],{icon: constrIcon}).bindPopup('Cruce del colector Pluvial Av. Aviacion, mediante hincado de 3 tubos de 1.07 m de diámetro, en el cruce de la Av. Aviación y Carretera Tesistán.').addTo(obras).openPopup();
-	L.marker([20.6549861111111, -103.299580555556],{icon: constrIcon}).bindPopup('Construcción de colectores pluviales de entrada al Deposito San Rafael, en una longitud aproximada de 1,054 m; en diámetros de 0.61 m a 1.83 m.').addTo(obras).openPopup();
-	L.marker([20.6531555555556, -103.296580555556],{icon: constrIcon}).bindPopup('Deposito San Andrés (San Rafael) cap.= 21,350 m3, y construcción de  sistema de detención mediante canales perimetrales y tuberías de acero.').addTo(obras).openPopup();
-	L.marker([20.6496305555556, -103.298294444444],{icon: constrIcon}).bindPopup('Construcción de colector pluvial de salida del Deposito San Rafael, en diámetro de 1.22 m en una longitud aproximada de 1132 m.').addTo(obras).openPopup();
+	L.marker([20.6333805555556, -103.34605],{icon: constrIcon}).bindPopup('ConformaciÃ³n y adecuaciones del canal de entrada al vaso regulador el Dean con longitud  aproximada de 680 m.').addTo(obras).openPopup();
+	L.marker([20.6442555555556, -103.342455555556],{icon: constrIcon}).bindPopup('ConstrucciÃ³n de 2 cajas separadoras de flujos para el colector Amapola; y cajas complementarias.').addTo(obras).openPopup();
+	L.marker([20.7594138888889, -103.440855555556],{icon: constrIcon}).bindPopup(' ConstrucciÃ³n de Colector pluvial en Av. AviaciÃ³n de 150 cm. de diÃ¡metro con una longitud de 970 m, hincado con tuberia de concreto reforzado grado III pared B con refuerzo para hincado.').addTo(obras).openPopup();
+	L.marker([20.7630027777778, -103.437486111111],{icon: constrIcon}).bindPopup('Cruce del colector Pluvial Av. Aviacion, mediante hincado de 3 tubos de 1.07 m de diÃ¡metro, en el cruce de la Av. AviaciÃ³n y Carretera TesistÃ¡n.').addTo(obras).openPopup();
+	L.marker([20.6549861111111, -103.299580555556],{icon: constrIcon}).bindPopup('ConstrucciÃ³n de colectores pluviales de entrada al Deposito San Rafael, en una longitud aproximada de 1,054 m; en diÃ¡metros de 0.61 m a 1.83 m.').addTo(obras).openPopup();
+	L.marker([20.6531555555556, -103.296580555556],{icon: constrIcon}).bindPopup('Deposito San AndrÃ©s (San Rafael) cap.= 21,350 m3, y construcciÃ³n de  sistema de detenciÃ³n mediante canales perimetrales y tuberÃ­as de acero.').addTo(obras).openPopup();
+	L.marker([20.6496305555556, -103.298294444444],{icon: constrIcon}).bindPopup('ConstrucciÃ³n de colector pluvial de salida del Deposito San Rafael, en diÃ¡metro de 1.22 m en una longitud aproximada de 1132 m.').addTo(obras).openPopup();
 
 
 /**
@@ -161,7 +161,7 @@ window.onload = function () {
 	var overlays = {
 		"Selecciona Detalle":{
 			"Sucursales SIAPA": coolPlaces,                     
-			"Manejo de Inundación":obras,
+			"Manejo de InundaciÃ³n":obras,
 			"Rutas Alternas":rutasAlt,}
 		};
 
@@ -256,12 +256,12 @@ window.onload = function () {
 		[20.658305, -103.423212],
 		[20.650294, -103.426387],
 		[20.650053, -103.423340],
-		[20.645134, -103.425980],
-		[20.646881, -103.436687]
+		[20.643728, -103.420862],
+		[20.646881, -103.436687],
 	]).addTo(obras);
 
 	/**
-	 * 6.- AMPLIACIÓN DEL VASO REGULADOR EL DEÁN PROGRAMA DE OBRA: DE SEMANA 2 A SEMANA 32
+	 * 6.- AMPLIACIÃ“N DEL VASO REGULADOR EL DEÃN PROGRAMA DE OBRA: DE SEMANA 2 A SEMANA 32
 	**/
 	var obra6 = L.polygon([
 		[20.644070, -103.352316],
@@ -365,7 +365,7 @@ window.onload = function () {
 		[20.716216859713708, -103.3439227938652],
 		[20.71594841916354, -103.34396839141846],
 		[20.7164050186943, -103.34517002105713],
-	    	[20.71654049301562, -103.34557771682738],
+	    [20.71654049301562, -103.34557771682738],
 		[20.716721125255606, -103.34591299295425],
 		[20.716716107696293, -103.34613025188446],
 		[20.717177722457492, -103.34701538085938],
@@ -594,6 +594,7 @@ window.onload = function () {
 		[20.64633854796891, -103.42952013015748],
 		[20.646137752374987, -103.42811465263368],
 		[20.645736160391706, -103.42580795288087],
+		[20.644976, -103.421359],
 	];
 
 	var polyline = L.polyline(area4_pink, {color: '#FF00AA'}).addTo(obras);
@@ -638,15 +639,14 @@ window.onload = function () {
 	var polyline = L.polyline(area5_pink, {color: '#FF00AA'}).addTo(obras);
 	var area5_pink2 = [
 		[20.644069542327635, -103.34283381700517],
-		[20.641988754078092, -103.34653526544572],
+		[20.641988754078092, -103.34653526544572],		
 	];
 	var polyline = L.polyline(area5_pink2, {color: '#FF00AA'}).addTo(obras);
 	var area5_pink3 = [
 		[20.642611236538812, -103.3454141020775],
 		[20.64103745539588, -103.34440290927888],
 		[20.63968705285382, -103.34675788879395],
-		[20.63910471943351, -103.34733188152315],
-
+		[20.63910471943351, -103.34733188152315],		
 	];
 	var polyline = L.polyline(area5_pink3, {color: '#FF00AA'}).addTo(obras);
 	var area5_pink4 = [
@@ -758,7 +758,7 @@ window.onload = function () {
 		[20.71165832340389, -103.34203451871873],
 		[20.711951860142786, -103.34400326013566],
 	];
-	var polyline = L.polyline(area1_alterna_roja, {color: '#C80003'}).addTo(rutasAlt);
+	var polyline = L.polyline(area1_alterna_roja, {color: '#9900FF', dashArray: '10'}).addTo(obras);
 
 	animatePolypoint(polyline, '#C80003');
 
@@ -786,8 +786,8 @@ window.onload = function () {
 		[20.710950822260507, -103.35579693317415],
 		[20.711362277228076, -103.35564136505128],
 		[20.711969422151878, -103.35541605949403],
-	];
-	var polyline = L.polyline(area1_alterna_roja2, {color: '#C80003'}).addTo(rutasAlt);
+		];
+	var polyline = L.polyline(area1_alterna_roja2, {color: '#9900FF', dashArray: '10'}).addTo(obras);
 
 	animatePolypoint(polyline, '#C80003');
 
@@ -804,7 +804,7 @@ window.onload = function () {
 		[20.704628324983723, -103.3473587036133],
 		[20.702370226330324, -103.34757328033449]
 	];
-	var polyline = L.polyline(area1_alterna_azul, {color: 'blue'}).addTo(rutasAlt);
+	var polyline = L.polyline(area1_alterna_azul, {color: '#9900FF', dashArray: '10'}).addTo(obras);
 
 	animatePolypoint(polyline, '#0000FF');
 
@@ -819,7 +819,7 @@ window.onload = function () {
 		[20.72144257491102, -103.34530413150789],
 		[20.72241594793369, -103.34529876708986],
 	];
-	var polyline = L.polyline(area1_alterna_azul2, {color: 'blue'}).addTo(rutasAlt);
+	var polyline = L.polyline(area1_alterna_azul2, {color: '#9900FF', dashArray: '10'}).addTo(obras);
 
 	animatePolypoint(polyline, '#0000FF');
 
@@ -840,7 +840,7 @@ window.onload = function () {
 		[20.71779487912562, -103.35416078567506],
 		[20.717112494370053, -103.35429489612581],
 	];
-	var polyline = L.polyline(area1_alterna_roja3, {color: '#C80003'}).addTo(rutasAlt);
+	var polyline = L.polyline(area1_alterna_roja3, {color: '#9900FF', dashArray: '10'}).addTo(obras);
 	
 	animatePolypoint(polyline, '#C80003');
 
@@ -853,7 +853,7 @@ window.onload = function () {
 		[20.63689082806597, -103.4216344356537],
 		[20.636750262446967, -103.42185437679292],
 	];
-	var polyline = L.polyline(area2_alterna_roja, {color: '#C80003'}).addTo(rutasAlt);
+	var polyline = L.polyline(area2_alterna_roja, {color: '#9900FF', dashArray: '10'}).addTo(obras);
 
 	animatePolypoint(polyline, '#C80003');
 
@@ -870,7 +870,7 @@ window.onload = function () {
 		[20.662391297497877, -103.29844594001771],
 		[20.662878174287826, -103.29832255840303],
 	];
-	var polyline = L.polyline(area3_alterna_roja, {color: '#C80003'}).addTo(rutasAlt);
+	var polyline = L.polyline(area3_alterna_roja, {color: '#9900FF', dashArray: '10'}).addTo(obras);
 
 	animatePolypoint(polyline, '#C80003');
 
@@ -878,7 +878,7 @@ window.onload = function () {
 		[20.6549223116231, -103.29964220523836],
 		[20.662373729749486, -103.29849153757097],
 	];
-	var polyline = L.polyline(area3_alterna_rosa, {color: '#FF00AA'}).addTo(rutasAlt);
+	var polyline = L.polyline(area3_alterna_rosa, {color: '#9900FF', dashArray: '10'}).addTo(obras);
 
 	animatePolypoint(polyline, '#FF00AA');
 
@@ -894,7 +894,7 @@ window.onload = function () {
 		[20.763215468618345, -103.44010144472125],
 		[20.762881903074902, -103.43928068876268]
 	];
-	var polyline = L.polyline(linea1_roja, {color: '#C80003'}).addTo(rutasAlt);
+	var polyline = L.polyline(linea1_roja, {color: '#9900FF', dashArray: '10'}).addTo(obras);
 
 	animatePolypoint(polyline, '#C80003');
 
@@ -903,7 +903,7 @@ window.onload = function () {
 		[20.75989357440669, -103.44100534915925],
 		[20.759718009827402, -103.4407424926758]
 	];
-	var polyline = L.polyline(linea2_roja, {color: '#C80003'}).addTo(rutasAlt);
+	var polyline = L.polyline(linea2_roja, {color: '#9900FF', dashArray: '10'}).addTo(obras);
 	
 	animatePolypoint(polyline, '#C80003');
 	
@@ -914,7 +914,7 @@ window.onload = function () {
 		[20.756457487725815, -103.43608081340791],
 		[20.757646332392262, -103.43769550323488]
 	];
-	var polyline = L.polyline(linea3_roja, {color: '#C80003'}).addTo(rutasAlt);
+	var polyline = L.polyline(linea3_roja, {color: '#9900FF', dashArray: '10'}).addTo(obras);
 
 	animatePolypoint(polyline, '#C80003');
 
@@ -923,7 +923,7 @@ window.onload = function () {
 	 *
 	*/
 
-	var acu_linea1_roja = [
+	var acu_linea1_roja = [		
 		[20.708258775304277, -103.40578794479372],
 		[20.70956340794634, -103.40670526027681],
 		[20.70979924418691, -103.40662479400636],
@@ -945,9 +945,10 @@ window.onload = function () {
 		[20.711707246233203, -103.39777618646623],
 		[20.711895410814076, -103.3978056907654],
 		[20.712053468881454, -103.39792370796205],
-		[20.71198071201378, -103.3981302380562]
+		[20.71198071201378, -103.3981302380562],
+		[20.71144506986092, -103.40171098709108]
 	];
-	var polyline = L.polyline(acu_linea1_roja, {color: '#C80003'}).addTo(rutasAlt);
+	var polyline = L.polyline(acu_linea1_roja, {color: '#9900FF',dashArray: '10'}).addTo(obras);
 	
 	animatePolypoint(polyline, '#C80003');
 	
@@ -964,14 +965,43 @@ window.onload = function () {
 		[20.71402918081292, -103.40681791305543],
 		[20.711369803832937, -103.40818583965303],
 		[20.712270484848236, -103.40893149375917],
-
 		[20.712231597616938, -103.40893417596818],
 		[20.712269230421594, -103.4089368581772],
-		[20.712256686154404, -103.40888857841492]
-	];
-	var polyline = L.polyline(acu_linea2_roja, {color: '#C80003'}).addTo(rutasAlt);
+		[20.712256686154404, -103.40888857841492],
+		[20.718515, -103.413748]
+		];
+	var polyline = L.polyline(acu_linea2_roja, {color: '#9900FF',dashArray: '10'}).addTo(obras);
 
 	animatePolypoint(polyline, '#C80003');
+	
+	var acu_linea3_roja =[
+		[20.718411, -103.413882],
+		[20.712632, -103.409383],
+		[20.710188, -103.407429],
+		[20.709747, -103.407806],
+		[20.708630, -103.410150],
+		[20.707049, -103.412549],		
+		];
+	var polyline = L.polyline(acu_linea3_roja, {color: '#9900FF', dashArray: '10'}).addTo(obras);
+
+	animatePolypoint(polyline, '#C80003');
+	
+		var acu_linea4_roja =[
+		[20.705311, -103.413291],
+		[20.706821, -103.412509],
+		[20.707005, -103.412236],
+		[20.708902, -103.409116],
+		[20.709659, -103.407339],
+		[20.710279, -103.406629],
+		[20.711193, -103.406409],
+		[20.711838, -103.405804],
+		[20.711913, -103.404919],
+		[20.711223, -103.403504]		
+		];
+	var polyline = L.polyline(acu_linea4_roja, {color: '#9900FF', dashArray: '10'}).addTo(obras);
+
+	animatePolypoint(polyline, '#C80003');
+	
 	
 	/**
  	*	Circulo
