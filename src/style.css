@@ -2,6 +2,24 @@
 	.re {
 		float: inherit !important;
 	}
+	.row {
+		display: inline-block !important;
+	}
+	.down {
+		padding-top: 15px;
+		position: relative !important;
+		width: 100% !important;
+	}
+}
+@media only screen and (max-width : 1257px) {
+	.sakura {
+		float: left !important;
+	}
+	.down {
+		padding-top: 15px;
+		position: relative !important;
+		width: 100% !important;
+	}
 }
 body {
 	color: rgb(0, 0, 0); 
@@ -89,7 +107,7 @@ html, body {
 	height:106px;
 }
 .jalisco{
-	width: 218px;
+	width: auto;
 	height: 73px;
 }
 .suzy {
@@ -126,11 +144,20 @@ html, body {
 }
 .jalisco {
 	height: 73px;
-	width: 218px;
+	width: auto;
 }
 .row {
-	display: inline-block;
+	display: flex;
 	height: 50px;
 	position: relative;
 	width: 100% !important;
+}
+.direct {
+	position: relative;
+	width: 60%;
+}
+.icons {
+	float: right;
+	position: absolute;
+	width: 40%;
 }
