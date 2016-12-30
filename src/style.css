@@ -164,3 +164,6 @@ html, body {
 .yuriko_huehara {
 	margin: 5px;
 }
+.yuriko_huehara img {
+	border-radius: 3px;
+}
