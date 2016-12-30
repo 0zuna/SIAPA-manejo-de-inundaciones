@@ -1224,6 +1224,16 @@ window.onload = function () {
 	L.circle([20.659490081804215, -103.2997226715088], 1800).addTo(rutasAlt);
 	L.circle([20.711603128398025, -103.4037494659424], 1800).addTo(rutasAlt);
 	L.circle([20.760207082076768, -103.43696594238283], 1800).addTo(rutasAlt);
+/**
+ *
+ *	Señalizacion
+ *
+ */
+	//L.control.slideMenu('<p>test</p>').addTo(map);
+var slideMenu = L.control.slideMenu('<div style="margin: 5px;"><h3>Rutas alternas</h3><h2 style="color: purple;">------------</h2></div>', {position: 'bottomleft', width: '150px', height: '100px', delay: '50'}).addTo(map);
+
+	//slideMenu.setContents(right + contents);
+
 
 
 /**
