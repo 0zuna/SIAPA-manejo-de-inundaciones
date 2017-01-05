@@ -1347,6 +1347,13 @@ window.onload = function () {
 	L.circle([20.711603128398025, -103.4037494659424], 1800).addTo(rutasAlt);
 	L.circle([20.760207082076768, -103.43696594238283], 1800).addTo(rutasAlt);
 
+/**
+ *
+ *	Popup Obra terminada
+ *
+ */
+	var popup = L.popup().setLatLng([20.7115555555556, -103.406708333333]).setContent('<p>Obra Terminada!.</p>').openOn(map);
+
 
 /**
  *
