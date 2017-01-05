@@ -110,7 +110,7 @@ window.onload = function () {
 
 
 
-	L.marker([20.7115555555556, -103.406708333333],{icon: constrIcon}).bindPopup('<div style="height:auto;width:180px;">Colector Pluvial Av. Acueducto de 150 cm de diámetro longitud aprox. 170 m, incluye tramo en cajón de concreto para cruce de carril central de Avenida Patria. <div style="height: auto; overflow-x: scroll;white-space: nowrap; margin-top: 10px;" ><a class="yuriko_huehara" data-lightbox="album" href="assets/obras/IMG-20161230-WA0008.jpg"><img width="150" src="assets/obras/IMG-20161230-WA0008.jpg" alt="" /></a><a class="yuriko_huehara" data-lightbox="album" href="assets/obras/IMG-20161230-WA0007.jpg"><img width="150" src="assets/obras/IMG-20161230-WA0007.jpg" alt="" /></a><a class="yuriko_huehara" data-lightbox="album" href="assets/obras/IMG-20161230-WA0005.jpg"><img width="150" src="assets/obras/IMG-20161230-WA0008.jpg" alt="" /></a></div></div>').addTo(obras).openPopup();
+	L.marker([20.7115555555556, -103.406708333333],{icon: constrIcon}).bindPopup('<center><header><h3>Obra Terminada</h3></header></center><div style="height:auto;width:180px;">Colector Pluvial Av. Acueducto de 150 cm de diámetro longitud aprox. 170 m, incluye tramo en cajón de concreto para cruce de carril central de Avenida Patria. <div style="height: auto; overflow-x: scroll;white-space: nowrap; margin-top: 10px;" ><a class="yuriko_huehara" data-lightbox="album" href="assets/obras/IMG-20161230-WA0008.jpg"><img width="150" src="assets/obras/IMG-20161230-WA0008.jpg" alt="" /></a><a class="yuriko_huehara" data-lightbox="album" href="assets/obras/IMG-20161230-WA0007.jpg"><img width="150" src="assets/obras/IMG-20161230-WA0007.jpg" alt="" /></a><a class="yuriko_huehara" data-lightbox="album" href="assets/obras/IMG-20161230-WA0005.jpg"><img width="150" src="assets/obras/IMG-20161230-WA0008.jpg" alt="" /></a></div></div>').addTo(obras).openPopup();
 	L.marker([20.6375916666667, -103.431738888889],{icon: constrIcon}).bindPopup('Construcción de colector pluvial, por la av. Felipe Zetter de 0.91 m a 1.22 m de diámetro, Longitud aproximada de 478 m..').addTo(obras).openPopup();
 	L.marker([20.6382944444444, -103.429197222222],{icon: constrIcon}).bindPopup('Construcción de colector pluvial de descarga, por la av. Felipe Zetter y calle Volan Vesubio de 1.22 m de diámetro con descarga a Canal Santa Catalina Longitud aproximada=686 m.').addTo(obras).openPopup();
 	L.marker([20.6460472222222, -103.427713888889],{icon: constrIcon}).bindPopup('Construcción de tramo de colector pluvial  de diámetro de 2.13 m etapa 1, por Av. Colli, longitud aproximada de 580 m.').addTo(obras).openPopup();
@@ -548,8 +548,9 @@ window.onload = function () {
 		//[20.709997446701014, -103.40676963329315],
 		//[20.710158015636306, -103.40701103210449],
 	];
+	//Linea rosa
+	//var polyline = L.polyline(area2_pink, {color: '#FF00AA'}).addTo(obras);
 	
-	var polyline = L.polyline(area2_pink, {color: '#FF00AA'}).addTo(obras);
 	var area2_black = [
 		//[20.710158015636306, -103.40701103210449],
 		//[20.710263388907624, -103.40736508369446],
@@ -1097,8 +1098,8 @@ window.onload = function () {
 		//termina hacia Anillo periferico Nte
 		];
 
-	var polyline = L.polyline(acu_linea1_roja_1, {color: '#01DF01',dashArray: '10'}).addTo(obras);
-	animatePolypoint(acu_linea1_roja_1, '#C80003');
+	//var polyline = L.polyline(acu_linea1_roja_1, {color: '#01DF01',dashArray: '10'}).addTo(obras);
+	//animatePolypoint(acu_linea1_roja_1, '#C80003');
 
 // --------------------------------------------------------------------------------------------------
 // --------------------------------------------------------------------------------------------------
@@ -1200,7 +1201,7 @@ window.onload = function () {
 		[20.723855926447666, -103.4179973602295]
 		//termina hacia Anillo Periferico Norte
 		];
-	var polyline = L.polyline(acu_linea2_roja_acueducto, {color: 'black',dashArray: '10'}).addTo(obras);
+	//var polyline = L.polyline(acu_linea2_roja_acueducto, {color: 'black',dashArray: '10'}).addTo(obras);
 
 ////////  flecha de Av. Patria para acueducto y hacia Anillo Periferico Norte  /////////
 	var  acu_linea2_roja_acueducto = [
@@ -1226,7 +1227,7 @@ window.onload = function () {
 		//termina sentido animatePolypoint
 		//termina hacia Anillo Periferico Norte
 		];
-	animatePolypoint(acu_linea2_roja_acueducto, '#C80003');
+	//animatePolypoint(acu_linea2_roja_acueducto, '#C80003');
 // --------------------------------------------------------------------------------------------------
 // --------------------------------------------------------------------------------------------------
 
@@ -1255,8 +1256,8 @@ window.onload = function () {
 		//termina linea y sentido de flecha animatePolypoint
 		//termina hacia Pablo Neruda
 		];
-	var polyline = L.polyline(acu_linea3_roja, {color: '#0101DF', dashArray: '10'}).addTo(obras);
-	animatePolypoint(acu_linea3_roja, '#C80003');
+	//var polyline = L.polyline(acu_linea3_roja, {color: '#0101DF', dashArray: '10'}).addTo(obras);
+	//animatePolypoint(acu_linea3_roja, '#C80003');
 
 // --------------------------------------------------------------------------------------------------
 // --------------------------------------------------------------------------------------------------
@@ -1331,9 +1332,9 @@ window.onload = function () {
 		[20.711689684193733, -103.40448439121246]
 		//termina sentido animatePolypoint	
 		];
-	var polyline = L.polyline(acu_linea4_roja, {color: '#FF8000', dashArray: '10'}).addTo(obras);
+	//var polyline = L.polyline(acu_linea4_roja, {color: '#FF8000', dashArray: '10'}).addTo(obras);
 
-	animatePolypoint(polyline, '#C80003');
+	//animatePolypoint(polyline, '#C80003');
 // --------------------------------------------------------------------------------------------------
 // --------------------------------------------------------------------------------------------------
 
