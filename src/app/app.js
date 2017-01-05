@@ -165,7 +165,7 @@ window.onload = function () {
 
 	var map = L.map('map', {
 		layers: [gooUrl]
-		}).setView([20.678241597926203, -103.3586883544922], 13);
+		});
 
 
 	var baseLayers = {
@@ -1355,21 +1355,28 @@ window.onload = function () {
  */
 	var popup = L.popup().setLatLng([20.7115555555556, -103.406708333333]).setContent('<p>Obra Terminada!.</p>').openOn(map);
 
-
 /**
  *
  *	CONTROL
  *
  */
+	if($(window).width() >= 401){
+		map.setView([20.678241597926203, -103.3586883544922], 13);
+		L.control.groupedLayers(baseLayers, overlays,{collapsed:false}).addTo(map);
+	}else {
+		map.setView([20.67711737527203, -103.37791442871095], 12);
+		L.control.groupedLayers(baseLayers, overlays).addTo(map);
+	}
 
-	L.control.groupedLayers(baseLayers, overlays).addTo(map);
 	var info = L.control();
+	info.update = function (props) {
+		this._div.innerHTML = '<h4><strong>Rutas Alternas ---->--->--</strong></h4>';
+	};
 	info.onAdd = function (map) {
 		this._div = L.DomUtil.create('div', 'info');
+		this.update();
 		return this._div;
-		};
-	
-
+	};
 
 	var osmGeocoder = new L.Control.OSMGeocoder({
 		collapsed: false,

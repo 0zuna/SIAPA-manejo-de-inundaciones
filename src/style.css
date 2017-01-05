@@ -21,6 +21,11 @@
 		width: 100% !important;
 	}
 }
+@media only screen and (max-width : 370px) {
+	#map {
+		height: 70% !important;
+	}
+}
 body {
 	color: rgb(0, 0, 0); 
 	background-color: rgb(255, 255, 255);
