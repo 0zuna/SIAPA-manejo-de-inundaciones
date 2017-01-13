@@ -618,7 +618,7 @@ window.onload = function () {
 		[20.63590686600556, -103.43357026576997],
 		[20.63595706830556, -103.43302309513093],
 	];
-	var polyline = L.polyline(area3_roja, {color: 'red', dashArray: '10'}).addTo(obras);
+	var polyline = L.polyline(area3_roja, {color: '#9900FF', dashArray: '10'}).addTo(obras);
 	animatePolypoint(polyline, '#C80003');
 
 	
