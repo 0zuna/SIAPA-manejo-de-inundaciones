@@ -1,4 +1,5 @@
 window.onload = function () {
+	console.log("Te amo \\^-^/");
 	function animatePolypoint (polyline, color) {
 		var arrowHead = L.polylineDecorator(polyline).addTo(obras);
 		var arrowOffset = 0;
