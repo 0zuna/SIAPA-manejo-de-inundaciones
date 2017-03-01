@@ -208,6 +208,7 @@ window.onload = function () {
 	var	osmMap = L.tileLayer(osmUrl, {attribution: osmAttrib});
 	var	landMap = L.tileLayer(landUrl, {attribution: thunAttrib});
 	var	gooMap = L.tileLayer(gooUrl, {attribution: gooAttrib});
+	var googleTraffic = new L.GoogleTraffic('ROADMAP', { maxZoom: 20 });
 	
 
 	var map = L.map('map', {
@@ -220,7 +221,8 @@ window.onload = function () {
 		"Google Satellite": goiUrl,
 		"Google Hybrid": goaUrl,  
 		"OSM Mapnik": osmMap,
-		"Landscape": landMap,                     
+		"Landscape": landMap,
+		"Trafico": googleTraffic,                   
 		};
 
 
