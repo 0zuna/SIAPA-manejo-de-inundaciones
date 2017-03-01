@@ -3,11 +3,10 @@
 <head>
 	<meta http-equiv=Content-Type content="text/html; charset=utf-8" http-equiv="content-type">
 	<title>SIAPA - Obras en proceso</title>
-	<!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" /> -->
-	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
 	<link rel="stylesheet" href="bower_components/lightbox2/dist/css/lightbox.css">
 	<link rel="stylesheet" type="text/css" href="src/style.css">
-	<link rel="stylesheet" type="text/css" href="bower_components/leaflet-control-osm-geocoder/Control.OSMGeocoder.css">
+	<!--<link rel="stylesheet" type="text/css" href="http://k4r573n.github.io/leaflet-control-osm-geocoder/Control.OSMGeocoder.css">-->
 	<style type="text/css">
 	.roja {
 	color: rgb(255,0,0);
@@ -49,6 +48,12 @@
 		@import url("http://siapa.gob.mx/sites/all/themes/omega/alpha/css/grid/alpha_default/wide/alpha-default-wide-12.css?o56hvk");
 	</style>
 	<!--<![endif]-->
+
+	<style>
+		button {
+			padding: 10px 12%;
+		}
+	</style>
 </head>
 
 <body>
@@ -63,6 +68,19 @@
 	<div id="map" class='full'></div>
 
 	<hr>
+	<div>
+		<center>
+			<button class="routeButton" id="lastPoint">Retroceder</button>
+			<button class="routeButton" id="newRoute">Crear Ruta</button>
+			<button class="routeButton" id="deleteRoute">Cancelar Ruta</button>
+		</center>
+	</div>
+	
+	<hr>
+	<fieldset>
+    <legend>Ruta:</legend>
+		<div id="info-ruta"></div>
+	</fieldset>
 	
 	<footer id="section-footer" class="section section-footer">
 		<div id="zone-footer-wrapper" class="zone-wrapper zone-footer-wrapper clearfix">  
@@ -96,16 +114,12 @@
 		</div>
 	</footer>
 
-	<!-- <script src='bower_components/leaflet/dist/leaflet.js'></script> -->
-	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-	<script src="bower_components/leaflet-control-osm-geocoder/Control.OSMGeocoder.js"></script>
+	<script src='bower_components/leaflet/dist/leaflet.js'></script>
 	<script src="bower_components/leaflet-polylinedecorator/leaflet.polylineDecorator.js"></script>
 	<script src='bower_components/leaflet-groupedlayercontrol/dist/leaflet.groupedlayercontrol.min.js'></script>
 	<script src='bower_components/jquery/dist/jquery.js'></script>
 	<script src='bower_components/lightbox2/dist/js/lightbox.js'></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWHwt1Yr8PXdlkYU0xCcOgIDYInthgiIc" type="text/javascript"></script>
-	<script src='bower_components/googlemaps/Google.js'></script>
-	<script src='bower_components/googlemaps/GoogleTraffic.js'></script>
 	<script src='src/app/app.js'></script>
+	<script src='src/app/draw/app.draw.js'></script>
 </body>
 </html>
